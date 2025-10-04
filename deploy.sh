@@ -6,7 +6,8 @@ set -e
 # 配置项
 REPO_URL="git@github.com:cmdlhh/cmdlhh.github.io.git"
 BRANCH="gh-pages"
-LOCAL_PUBLIC_DIR="/Users/liuhonghui/workspace/cmdlhh.github.io/public"
+# 使用相对路径替代绝对路径，以隐藏用户目录信息
+LOCAL_PUBLIC_DIR="$(pwd)/public"
 
 # 清理并构建网站
 echo "正在构建网站..."
@@ -44,7 +45,7 @@ git commit -m "Initial commit for GitHub Pages"
 git remote add origin "$REPO_URL"
 # 推送新分支到远程
 echo "正在创建 $BRANCH 分支..."
-git push -u origin master:$BRANCH
+git push -u origin main:$BRANCH
 
 # 添加短暂延迟确保分支创建成功
 echo "等待分支创建完成..."
