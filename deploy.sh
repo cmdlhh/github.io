@@ -24,45 +24,34 @@ echo "正在准备部署..."
 temp_dir=$(mktemp -d)
 cd "$temp_dir"
 
-# 检查分支是否存在
-if git ls-remote --exit-code --heads origin $BRANCH >/dev/null 2>&1; then
-    # 分支存在，克隆它
-echo "正在克隆 $BRANCH 分支..."
-git clone -b $BRANCH "$REPO_URL" .
-else
-    # 分支不存在，创建新的空分支
-mkdir temp_repo
-cd temp_repo
+# 初始化一个新的git仓库
+echo "正在初始化临时Git仓库..."
 git init
-# 创建 README.md 文件作为初始内容
-echo "# GitHub Pages Branch" > README.md
-# 创建 .gitignore 文件
-echo "*" > .gitignore
-echo "!.gitignore" >> .gitignore
-echo "!README.md" >> .gitignore
-git add -f .gitignore README.md
-git commit -m "Initial commit for GitHub Pages"
+# 添加远程仓库
 git remote add origin "$REPO_URL"
-# 推送新分支到远程
-echo "正在创建 $BRANCH 分支..."
-git push -u -f origin main:$BRANCH
 
-# 添加短暂延迟确保分支创建成功
-echo "等待分支创建完成..."
-sleep 2
+# 确保切换到gh-pages分支
+echo "正在切换到 $BRANCH 分支..."
+if git ls-remote --exit-code --heads origin $BRANCH >/dev/null 2>&1; then
+    # 如果远程分支存在，获取它的最新状态
+    git fetch origin $BRANCH
+    git checkout -b $BRANCH origin/$BRANCH || {
+        echo "警告：无法切换到现有分支，创建新分支"
+        git checkout -b $BRANCH
+    }
+else
+    # 如果远程分支不存在，创建一个新的空分支
+    git checkout --orphan $BRANCH
+    # 删除所有文件以创建真正的空分支
+    git rm -rf --cached .
+fi
 
-cd ..
-# 清理临时目录中的内容，确保克隆到空目录
-rm -rf temp_repo
-# 克隆新创建的分支
-if ! git clone -b $BRANCH "$REPO_URL" .;
-then
-    echo "错误：克隆 $BRANCH 分支失败，请稍后手动尝试部署"
-    exit 1
-fi
-fi
+# 清空临时目录中的所有内容（除了.git目录）
+echo "正在清理临时目录..."
+find . -mindepth 1 -maxdepth 1 ! -name '.git' -exec rm -rf {} +
 
 # 复制构建目录中的所有文件到临时目录
+echo "正在复制网站文件..."
 cp -r "$LOCAL_PUBLIC_DIR"/* .
 
 # 添加所有更改
@@ -71,7 +60,7 @@ git add .
 # 提交更改
 git commit -m "更新博客内容 $(date '+%Y-%m-%d %H:%M:%S')"
 
-# 推送到 GitHub Pages
+# 推送到 GitHub Pages，使用强制推送确保覆盖远程内容
 echo "正在推送到 GitHub Pages $BRANCH 分支..."
 git push -f origin $BRANCH
 
