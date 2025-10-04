@@ -45,15 +45,18 @@ git commit -m "Initial commit for GitHub Pages"
 git remote add origin "$REPO_URL"
 # 推送新分支到远程
 echo "正在创建 $BRANCH 分支..."
-git push -u origin main:$BRANCH
+git push -u -f origin main:$BRANCH
 
 # 添加短暂延迟确保分支创建成功
 echo "等待分支创建完成..."
 sleep 2
 
 cd ..
+# 清理临时目录中的内容，确保克隆到空目录
+rm -rf temp_repo
 # 克隆新创建的分支
-if ! git clone -b $BRANCH "$REPO_URL" .; then
+if ! git clone -b $BRANCH "$REPO_URL" .;
+then
     echo "错误：克隆 $BRANCH 分支失败，请稍后手动尝试部署"
     exit 1
 fi
@@ -70,7 +73,7 @@ git commit -m "更新博客内容 $(date '+%Y-%m-%d %H:%M:%S')"
 
 # 推送到 GitHub Pages
 echo "正在推送到 GitHub Pages $BRANCH 分支..."
-git push origin $BRANCH
+git push -f origin $BRANCH
 
 # 清理临时目录
 cd -
