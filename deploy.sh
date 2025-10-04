@@ -4,9 +4,9 @@
 set -e
 
 # 配置项
-REPO_URL="https://github.com/cmdlhh/github.io.git"
+REPO_URL="git@github.com:cmdlhh/cmdlhh.github.io.git"
 BRANCH="gh-pages"
-LOCAL_PUBLIC_DIR="/Users/liuhonghui/workspace/github.io/public"
+LOCAL_PUBLIC_DIR="/Users/liuhonghui/workspace/cmdlhh.github.io/public"
 
 # 清理并构建网站
 echo "正在构建网站..."

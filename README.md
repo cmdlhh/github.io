@@ -16,8 +16,8 @@
 ### 克隆仓库
 
 ```bash
-git clone https://github.com/cmdlhh/github.io.git
-cd github.io
+git clone git@github.com:cmdlhh/cmdlhh.github.io.git
+cd cmdlhh.github.io
 ```
 
 ### 更新主题
@@ -96,7 +96,7 @@ chmod +x deploy.sh  # 如果还没有执行权限
 1. 构建静态网站：`hugo`
 2. 进入 `public` 目录：`cd public`
 3. 初始化 Git 仓库：`git init`
-4. 添加远程仓库：`git remote add origin https://github.com/cmdlhh/github.io.git`
+4. 添加远程仓库：`git remote add origin git@github.com:cmdlhh/cmdlhh.github.io.git`
 5. 切换到 gh-pages 分支：`git checkout -b gh-pages` 或 `git checkout gh-pages`
 6. 添加所有文件：`git add .`
 7. 提交更改：`git commit -m "Deploy website"`
