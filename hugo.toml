@@ -1,0 +1,43 @@
+baseURL = 'https://cmdlhh.github.io/'
+languageCode = 'zh-cn'
+title = '我的技术博客'
+theme = 'PaperMod'
+
+# 主题配置
+[params]
+  env = 'production'
+  title = '我的技术博客'
+  description = '技术分享与学习笔记'
+  author = 'Honghui Liu'
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  displayFullLangName = false
+  ShowToc = true
+  TocOpen = false
+
+# 菜单配置
+[[menu.main]]
+  identifier = 'posts'
+  name = '文章'
+  url = '/posts/'
+  weight = 1
+[[menu.main]]
+  identifier = 'categories'
+  name = '分类'
+  url = '/categories/'
+  weight = 2
+[[menu.main]]
+  identifier = 'tags'
+  name = '标签'
+  url = '/tags/'
+  weight = 3
+[[menu.main]]
+  identifier = 'about'
+  name = '关于'
+  url = '/about/'
+  weight = 4
