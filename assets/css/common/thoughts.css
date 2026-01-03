@@ -1,0 +1,84 @@
+/* Thoughts页面样式 */
+
+/* 文章容器 */
+.thought-entry {
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.thought-entry:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* 内容容器 */
+.thought-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* 头部信息 */
+.thought-header {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* 作者信息 */
+.thought-author {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 4px;
+}
+
+/* 头像 */
+.author-avatar {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.author-avatar img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    background-color: #f0f0f0;
+}
+
+/* 作者信息区域 */
+.author-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+/* 作者名称 */
+.author-name {
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--primary);
+    line-height: 1.2;
+}
+
+/* 文字内容 */
+.thought-text {
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--content);
+    margin: 0;
+    word-wrap: break-word;
+    padding-left: 52px;
+}
+
+/* 时间信息 */
+.thought-meta {
+    font-size: 13px;
+    color: var(--secondary);
+    margin: 0;
+    padding-left: 52px;
+    line-height: 1.2;
+}
