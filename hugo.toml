@@ -3,6 +3,15 @@ languageCode = 'zh-cn'
 title = 'Honghui Liu'
 theme = 'PaperMod'
 
+# 允许渲染原始HTML
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+# 忽略HTML渲染警告
+ignoreLogs = ['warning-goldmark-raw-html']
+
 # 主题配置
 [params]
 env = 'production'
