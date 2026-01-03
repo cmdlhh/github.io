@@ -1,43 +1,57 @@
 baseURL = 'https://cmdlhh.github.io/'
 languageCode = 'zh-cn'
-title = '我的技术博客'
+title = 'Honghui Liu'
 theme = 'PaperMod'
 
 # 主题配置
 [params]
-  env = 'production'
-  title = '我的技术博客'
-  description = '技术分享与学习笔记'
-  author = 'Honghui Liu'
-  ShowReadingTime = true
-  ShowShareButtons = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  disableSpecial1stPost = false
-  disableScrollToTop = false
-  displayFullLangName = false
-  ShowToc = true
-  TocOpen = false
+env = 'production'
+title = 'Honghui Liu'
+description = '技术分享与学习笔记'
+author = 'Honghui Liu'
+ShowReadingTime = true
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = false
+ShowCodeCopyButtons = true
+disableSpecial1stPost = true
+disableScrollToTop = false
+displayFullLangName = false
+ShowToc = true
+TocOpen = false
+hideFooter = true
+
+# 社交图标配置
+socialIcons = [
+  { name = "github", url = "https://github.com/cmdlhh" },
+  { name = "douban", url = "https://www.douban.com/people/66784259/?_i=7183367zyRJr5i,7427293zyRJr5i" },
+  { name = "zhihu", url = "https://www.zhihu.com/people/liuhonghui" },
+]
+
+# 个人资料模式配置
+[params.profileMode]
+enabled = true
+title = 'Honghui Liu'
+subtitle = '福建出生，北京定居，喜欢数学，喜欢思考，在这个地方分享自己的一些个人见解'
+imageUrl = ''
+imageWidth = 120
+imageHeight = 120
+imageTitle = 'Honghui Liu'
+buttons = []
 
 # 菜单配置
 [[menu.main]]
-  identifier = 'posts'
-  name = '文章'
-  url = '/posts/'
-  weight = 1
+identifier = 'home'
+name = '首页'
+url = '/'
+weight = 1
 [[menu.main]]
-  identifier = 'categories'
-  name = '分类'
-  url = '/categories/'
-  weight = 2
+identifier = 'posts'
+name = '文章'
+url = '/posts/'
+weight = 2
 [[menu.main]]
-  identifier = 'tags'
-  name = '标签'
-  url = '/tags/'
-  weight = 3
-[[menu.main]]
-  identifier = 'about'
-  name = '关于'
-  url = '/about/'
-  weight = 4
+identifier = 'about'
+name = '关于'
+url = '/about/'
+weight = 3
