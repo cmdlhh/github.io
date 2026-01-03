@@ -20,6 +20,7 @@ displayFullLangName = false
 ShowToc = true
 TocOpen = false
 hideFooter = true
+mainSections = ['posts', 'thoughts']
 
 # 社交图标配置
 socialIcons = [
@@ -51,7 +52,7 @@ name = '文章'
 url = '/posts/'
 weight = 2
 [[menu.main]]
-identifier = 'about'
-name = '关于'
-url = '/about/'
+identifier = 'sui_xiang'
+name = '随想'
+url = '/thoughts/'
 weight = 3
