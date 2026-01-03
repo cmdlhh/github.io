@@ -7,7 +7,7 @@ theme = 'PaperMod'
 [params]
 env = 'production'
 title = 'Honghui Liu'
-description = '技术分享与学习笔记'
+description = '分享个人的思考见解'
 author = 'Honghui Liu'
 ShowReadingTime = true
 ShowShareButtons = false
@@ -25,7 +25,7 @@ mainSections = ['posts', 'thoughts']
 # 社交图标配置
 socialIcons = [
   { name = "github", url = "https://github.com/cmdlhh" },
-  { name = "douban", url = "https://www.douban.com/people/66784259/?_i=7183367zyRJr5i,7427293zyRJr5i" },
+  { name = "douban", url = "https://www.douban.com/people/66784259" },
   { name = "zhihu", url = "https://www.zhihu.com/people/liuhonghui" },
 ]
 
@@ -52,7 +52,7 @@ name = '文章'
 url = '/posts/'
 weight = 2
 [[menu.main]]
-identifier = 'sui_xiang'
+identifier = 'thoughts'
 name = '随想'
 url = '/thoughts/'
 weight = 3
