@@ -33,10 +33,10 @@ socialIcons = [
 [params.profileMode]
 enabled = true
 title = 'Honghui Liu'
-subtitle = '福建出生，北京定居，喜欢数学，喜欢思考，在这个地方分享自己的一些个人见解'
-imageUrl = ''
-imageWidth = 120
-imageHeight = 120
+subtitle = '90后，福建泉州出生，目前定居在北京，喜欢数学，热爱思考，最近几年对于股市的交易博弈感兴趣。<br><br><br><br>人生短暂，当下是最好的时代，在这个地方分享自己的一些小小的见解。'
+imageUrl = '/profile.jpg'
+imageWidth = 300
+imageHeight = 300
 imageTitle = 'Honghui Liu'
 buttons = []
 
