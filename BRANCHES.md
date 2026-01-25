@@ -46,7 +46,18 @@
 
 - **不要直接修改 gh-pages 分支**：所有更改都应通过 main 分支和部署脚本进行
 - **定期备份 main 分支**：main 分支包含所有源代码，应定期备份
-- **检查部署状态**：部署完成后，访问 https://cmdlhh.github.io/cmdlhh/ 检查网站是否更新
+- **检查部署状态**：部署完成后，访问 https://cmdlhh.github.io/ 检查网站是否更新
+- **正确的访问路径**：
+  - 首页：https://cmdlhh.github.io/
+  - 文章列表：https://cmdlhh.github.io/posts/
+  - 随想列表：https://cmdlhh.github.io/thoughts/
+  - **注意**：不要在URL中包含 `/cmdlhh/` 子目录，该子目录不存在
+
+## 常见错误
+
+- **错误的访问路径**：避免使用 `https://cmdlhh.github.io/cmdlhh/thoughts/` 这样的URL，正确路径是 `https://cmdlhh.github.io/thoughts/`
+- **直接修改 gh-pages 分支**：所有更改都应通过 main 分支和部署脚本进行
+- **忘记运行部署脚本**：在修改内容后，必须运行 `./deploy.sh` 才能将更改部署到网站
 
 ## 分支切换命令
 
