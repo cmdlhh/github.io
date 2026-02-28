@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>新世界 | Honghui Liu</title>
+<meta name="keywords" content="">
+<meta name="description" content="花了两小时的时间重新搭建了个人博客，借助了当下流行的AI IDE（TRAE）的力量，这在以往是不可想象的。
+AI让编程的门槛降低到了前所未有的简单，仅仅需要自然语言就可以完成复杂的编程任务。
+目前看到的大模型最有希望能解决的方向就是代码和数学，这种改变是革命性的。
+我们的许多固有思维都需要发生变化。
+传统的编程范式是一种低效但是人类能确定正确的方式，而当下需要转变思维，AI编程是一种高效可并发但存在概率出错的方式，从人类社会的发展来说，后者是更优的。
+还有一个最重要的问题需要解决，就是人与人之间过于低效的沟通交流。
+如果脑机接口这个项目能够实现，那么人类真的有可能进入一个全新的社会。">
+<meta name="author" content="Honghui Liu">
+<link rel="canonical" href="https://cmdlhh.github.io/posts/2026-01-03-%E6%96%B0%E4%B8%96%E7%95%8C%E7%9A%84%E5%A4%A7%E9%97%A8%E6%AD%A3%E5%9C%A8%E7%BC%93%E7%BC%93%E6%89%93%E5%BC%80/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0989fb0b617deb51403644641d9efdb8b0fa85c93bb2cb000aa9ba38c73832fd.css" integrity="sha256-CYn7C2F961FANkRkHZ79uLD6hck7sssACqm6OMc4Mv0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://cmdlhh.github.io/favicon.svg">
+<link rel="icon" type="image/png" sizes="16x16" href="https://cmdlhh.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://cmdlhh.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://cmdlhh.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://cmdlhh.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#ffffff">
+<meta name="msapplication-TileColor" content="#ffffff">
+<link rel="alternate" hreflang="en" href="https://cmdlhh.github.io/posts/2026-01-03-%E6%96%B0%E4%B8%96%E7%95%8C%E7%9A%84%E5%A4%A7%E9%97%A8%E6%AD%A3%E5%9C%A8%E7%BC%93%E7%BC%93%E6%89%93%E5%BC%80/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://cmdlhh.github.io/posts/2026-01-03-%E6%96%B0%E4%B8%96%E7%95%8C%E7%9A%84%E5%A4%A7%E9%97%A8%E6%AD%A3%E5%9C%A8%E7%BC%93%E7%BC%93%E6%89%93%E5%BC%80/">
+  <meta property="og:site_name" content="Honghui Liu">
+  <meta property="og:title" content="新世界">
+  <meta property="og:description" content="花了两小时的时间重新搭建了个人博客，借助了当下流行的AI IDE（TRAE）的力量，这在以往是不可想象的。
+AI让编程的门槛降低到了前所未有的简单，仅仅需要自然语言就可以完成复杂的编程任务。
+目前看到的大模型最有希望能解决的方向就是代码和数学，这种改变是革命性的。
+我们的许多固有思维都需要发生变化。
+传统的编程范式是一种低效但是人类能确定正确的方式，而当下需要转变思维，AI编程是一种高效可并发但存在概率出错的方式，从人类社会的发展来说，后者是更优的。
+还有一个最重要的问题需要解决，就是人与人之间过于低效的沟通交流。
+如果脑机接口这个项目能够实现，那么人类真的有可能进入一个全新的社会。">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-01-03T17:45:00+08:00">
+    <meta property="article:modified_time" content="2026-01-03T17:45:00+08:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="新世界">
+<meta name="twitter:description" content="花了两小时的时间重新搭建了个人博客，借助了当下流行的AI IDE（TRAE）的力量，这在以往是不可想象的。
+AI让编程的门槛降低到了前所未有的简单，仅仅需要自然语言就可以完成复杂的编程任务。
+目前看到的大模型最有希望能解决的方向就是代码和数学，这种改变是革命性的。
+我们的许多固有思维都需要发生变化。
+传统的编程范式是一种低效但是人类能确定正确的方式，而当下需要转变思维，AI编程是一种高效可并发但存在概率出错的方式，从人类社会的发展来说，后者是更优的。
+还有一个最重要的问题需要解决，就是人与人之间过于低效的沟通交流。
+如果脑机接口这个项目能够实现，那么人类真的有可能进入一个全新的社会。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "",
+      "item": "https://cmdlhh.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "新世界",
+      "item": "https://cmdlhh.github.io/posts/2026-01-03-%E6%96%B0%E4%B8%96%E7%95%8C%E7%9A%84%E5%A4%A7%E9%97%A8%E6%AD%A3%E5%9C%A8%E7%BC%93%E7%BC%93%E6%89%93%E5%BC%80/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "新世界",
+  "name": "新世界",
+  "description": "花了两小时的时间重新搭建了个人博客，借助了当下流行的AI IDE（TRAE）的力量，这在以往是不可想象的。\nAI让编程的门槛降低到了前所未有的简单，仅仅需要自然语言就可以完成复杂的编程任务。\n目前看到的大模型最有希望能解决的方向就是代码和数学，这种改变是革命性的。\n我们的许多固有思维都需要发生变化。\n传统的编程范式是一种低效但是人类能确定正确的方式，而当下需要转变思维，AI编程是一种高效可并发但存在概率出错的方式，从人类社会的发展来说，后者是更优的。\n还有一个最重要的问题需要解决，就是人与人之间过于低效的沟通交流。\n如果脑机接口这个项目能够实现，那么人类真的有可能进入一个全新的社会。\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "花了两小时的时间重新搭建了个人博客，借助了当下流行的AI IDE（TRAE）的力量，这在以往是不可想象的。\nAI让编程的门槛降低到了前所未有的简单，仅仅需要自然语言就可以完成复杂的编程任务。\n目前看到的大模型最有希望能解决的方向就是代码和数学，这种改变是革命性的。\n我们的许多固有思维都需要发生变化。\n传统的编程范式是一种低效但是人类能确定正确的方式，而当下需要转变思维，AI编程是一种高效可并发但存在概率出错的方式，从人类社会的发展来说，后者是更优的。\n还有一个最重要的问题需要解决，就是人与人之间过于低效的沟通交流。\n如果脑机接口这个项目能够实现，那么人类真的有可能进入一个全新的社会。\n",
+  "wordCount" : "8",
+  "inLanguage": "en",
+  "datePublished": "2026-01-03T17:45:00+08:00",
+  "dateModified": "2026-01-03T17:45:00+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Honghui Liu"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://cmdlhh.github.io/posts/2026-01-03-%E6%96%B0%E4%B8%96%E7%95%8C%E7%9A%84%E5%A4%A7%E9%97%A8%E6%AD%A3%E5%9C%A8%E7%BC%93%E7%BC%93%E6%89%93%E5%BC%80/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Honghui Liu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://cmdlhh.github.io/favicon.svg"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://cmdlhh.github.io/" accesskey="h" title="Honghui Liu (Alt + H)">Honghui Liu</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://cmdlhh.github.io/" title="首页">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://cmdlhh.github.io/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://cmdlhh.github.io/thoughts/" title="随想">
+                    <span>随想</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      新世界
+    </h1>
+    <div class="post-meta"><span title='2026-01-03 17:45:00 +0800 CST'>January 3, 2026</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Honghui Liu</span>
+
+</div>
+  </header> 
+
+  <div class="post-content"><p>花了两小时的时间重新搭建了个人博客，借助了当下流行的AI IDE（TRAE）的力量，这在以往是不可想象的。</p>
+<p>AI让编程的门槛降低到了前所未有的简单，仅仅需要自然语言就可以完成复杂的编程任务。</p>
+<p>目前看到的大模型最有希望能解决的方向就是代码和数学，这种改变是革命性的。</p>
+<p>我们的许多固有思维都需要发生变化。</p>
+<p>传统的编程范式是一种低效但是人类能确定正确的方式，而当下需要转变思维，AI编程是一种高效可并发但存在概率出错的方式，从人类社会的发展来说，后者是更优的。</p>
+<p>还有一个最重要的问题需要解决，就是人与人之间过于低效的沟通交流。</p>
+<p>如果脑机接口这个项目能够实现，那么人类真的有可能进入一个全新的社会。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://cmdlhh.github.io/posts/2026-02-15-%E6%99%BA%E8%83%BD%E7%88%86%E7%82%B8%E6%97%B6%E4%BB%A3/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>智能爆炸时代</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
