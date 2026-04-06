@@ -6,8 +6,16 @@
     <description>Recent content on Honghui Liu</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 15 Feb 2026 10:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2026 10:00:00 +0800</lastBuildDate>
     <atom:link href="https://cmdlhh.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>当下智能的上限</title>
+      <link>https://cmdlhh.github.io/posts/2026-04-06-%E5%BD%93%E4%B8%8B%E6%99%BA%E8%83%BD%E7%9A%84%E4%B8%8A%E9%99%90/</link>
+      <pubDate>Mon, 06 Apr 2026 10:00:00 +0800</pubDate>
+      <guid>https://cmdlhh.github.io/posts/2026-04-06-%E5%BD%93%E4%B8%8B%E6%99%BA%E8%83%BD%E7%9A%84%E4%B8%8A%E9%99%90/</guid>
+      <description>&lt;p&gt;对AI的焦虑来源于对人工智能的能力边界不清楚，尤其是这几年AI的能力每年都是指数级别的上升，尤其在数学和编程这类人类一贯当做智力评价的题目，在AI的世界里，是最容易跨越过去的。这里就涉及到了人类智能和AI智能的本质理解。从这个维度来说，人类智能更像是通用智能，而AI智能，只是一个专用智能。&lt;/p&gt;
+&lt;p&gt;前几天看到一个很好的说法，当下的AI更像是一种平庸的共识，而人类最珍贵的能力就是能够打破这些共识的灵光一闪，结合之前哈萨比斯对AGI的定义，回到1911年，AI能够自主推理出爱因斯坦的相对论。如果AI不能打破这个能力边界，那么它的上限就是确定性的。但是即便如此，这样的上限也是生产力效率的极大提高。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>智能爆炸时代</title>
       <link>https://cmdlhh.github.io/posts/2026-02-15-%E6%99%BA%E8%83%BD%E7%88%86%E7%82%B8%E6%97%B6%E4%BB%A3/</link>

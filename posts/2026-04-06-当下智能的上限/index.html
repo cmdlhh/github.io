@@ -5,13 +5,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>智能爆炸时代 | Honghui Liu</title>
+<title>当下智能的上限 | Honghui Liu</title>
 <meta name="keywords" content="">
-<meta name="description" content="AI的编程能力正在疯狂进步，已经到了让所有人类程序员面临淘汰的地步。这几天深度使用了GLM5，我明显感觉到：如果现在还在手工编码，就跟傻子没有区别。
-为什么我会如此焦虑？核心在于我是一个科班毕业生——本科和研究生学了7年软件工程。我深知这门学科在过去是一门相当耗费经验和时间的实践课：你需要花费数千甚至数万小时去反复编码、试错、解决Bug，才能从菜鸟工程师成长为资深工程师。而这其中，大量时间都浪费在了无意义的Debug和体力活编码上。这也是为什么我不喜欢编程的原因——我本质上不是一个热衷于重复性工作的人。
-但在2023年之后，这门学科被彻底改变了。大语言模型在各项编程指标上不断提升，尤其是从2025年下半年开始，AI的编程能力已经远超人类水平，并且实打实能实现ROI的提升。回想Anthropic CEO早些时候的判断，是没有问题的：到了2026年底，全世界可能80%-90%的新代码都将由AI生成。">
+<meta name="description" content="对AI的焦虑来源于对人工智能的能力边界不清楚，尤其是这几年AI的能力每年都是指数级别的上升，尤其在数学和编程这类人类一贯当做智力评价的题目，在AI的世界里，是最容易跨越过去的。这里就涉及到了人类智能和AI智能的本质理解。从这个维度来说，人类智能更像是通用智能，而AI智能，只是一个专用智能。
+前几天看到一个很好的说法，当下的AI更像是一种平庸的共识，而人类最珍贵的能力就是能够打破这些共识的灵光一闪，结合之前哈萨比斯对AGI的定义，回到1911年，AI能够自主推理出爱因斯坦的相对论。如果AI不能打破这个能力边界，那么它的上限就是确定性的。但是即便如此，这样的上限也是生产力效率的极大提高。">
 <meta name="author" content="Honghui Liu">
-<link rel="canonical" href="https://cmdlhh.github.io/posts/2026-02-15-%E6%99%BA%E8%83%BD%E7%88%86%E7%82%B8%E6%97%B6%E4%BB%A3/">
+<link rel="canonical" href="https://cmdlhh.github.io/posts/2026-04-06-%E5%BD%93%E4%B8%8B%E6%99%BA%E8%83%BD%E7%9A%84%E4%B8%8A%E9%99%90/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.0989fb0b617deb51403644641d9efdb8b0fa85c93bb2cb000aa9ba38c73832fd.css" integrity="sha256-CYn7C2F961FANkRkHZ79uLD6hck7sssACqm6OMc4Mv0=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://cmdlhh.github.io/favicon.svg">
 <link rel="icon" type="image/png" sizes="16x16" href="https://cmdlhh.github.io/favicon-16x16.png">
@@ -20,7 +19,7 @@
 <link rel="mask-icon" href="https://cmdlhh.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#ffffff">
 <meta name="msapplication-TileColor" content="#ffffff">
-<link rel="alternate" hreflang="en" href="https://cmdlhh.github.io/posts/2026-02-15-%E6%99%BA%E8%83%BD%E7%88%86%E7%82%B8%E6%97%B6%E4%BB%A3/">
+<link rel="alternate" hreflang="en" href="https://cmdlhh.github.io/posts/2026-04-06-%E5%BD%93%E4%B8%8B%E6%99%BA%E8%83%BD%E7%9A%84%E4%B8%8A%E9%99%90/">
 <noscript>
     <style>
         #theme-toggle,
@@ -57,22 +56,20 @@
         }
 
     </style>
-</noscript><meta property="og:url" content="https://cmdlhh.github.io/posts/2026-02-15-%E6%99%BA%E8%83%BD%E7%88%86%E7%82%B8%E6%97%B6%E4%BB%A3/">
+</noscript><meta property="og:url" content="https://cmdlhh.github.io/posts/2026-04-06-%E5%BD%93%E4%B8%8B%E6%99%BA%E8%83%BD%E7%9A%84%E4%B8%8A%E9%99%90/">
   <meta property="og:site_name" content="Honghui Liu">
-  <meta property="og:title" content="智能爆炸时代">
-  <meta property="og:description" content="AI的编程能力正在疯狂进步，已经到了让所有人类程序员面临淘汰的地步。这几天深度使用了GLM5，我明显感觉到：如果现在还在手工编码，就跟傻子没有区别。
-为什么我会如此焦虑？核心在于我是一个科班毕业生——本科和研究生学了7年软件工程。我深知这门学科在过去是一门相当耗费经验和时间的实践课：你需要花费数千甚至数万小时去反复编码、试错、解决Bug，才能从菜鸟工程师成长为资深工程师。而这其中，大量时间都浪费在了无意义的Debug和体力活编码上。这也是为什么我不喜欢编程的原因——我本质上不是一个热衷于重复性工作的人。
-但在2023年之后，这门学科被彻底改变了。大语言模型在各项编程指标上不断提升，尤其是从2025年下半年开始，AI的编程能力已经远超人类水平，并且实打实能实现ROI的提升。回想Anthropic CEO早些时候的判断，是没有问题的：到了2026年底，全世界可能80%-90%的新代码都将由AI生成。">
+  <meta property="og:title" content="当下智能的上限">
+  <meta property="og:description" content="对AI的焦虑来源于对人工智能的能力边界不清楚，尤其是这几年AI的能力每年都是指数级别的上升，尤其在数学和编程这类人类一贯当做智力评价的题目，在AI的世界里，是最容易跨越过去的。这里就涉及到了人类智能和AI智能的本质理解。从这个维度来说，人类智能更像是通用智能，而AI智能，只是一个专用智能。
+前几天看到一个很好的说法，当下的AI更像是一种平庸的共识，而人类最珍贵的能力就是能够打破这些共识的灵光一闪，结合之前哈萨比斯对AGI的定义，回到1911年，AI能够自主推理出爱因斯坦的相对论。如果AI不能打破这个能力边界，那么它的上限就是确定性的。但是即便如此，这样的上限也是生产力效率的极大提高。">
   <meta property="og:locale" content="zh-cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2026-02-15T10:00:00+08:00">
-    <meta property="article:modified_time" content="2026-02-15T10:00:00+08:00">
+    <meta property="article:published_time" content="2026-04-06T10:00:00+08:00">
+    <meta property="article:modified_time" content="2026-04-06T10:00:00+08:00">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="智能爆炸时代">
-<meta name="twitter:description" content="AI的编程能力正在疯狂进步，已经到了让所有人类程序员面临淘汰的地步。这几天深度使用了GLM5，我明显感觉到：如果现在还在手工编码，就跟傻子没有区别。
-为什么我会如此焦虑？核心在于我是一个科班毕业生——本科和研究生学了7年软件工程。我深知这门学科在过去是一门相当耗费经验和时间的实践课：你需要花费数千甚至数万小时去反复编码、试错、解决Bug，才能从菜鸟工程师成长为资深工程师。而这其中，大量时间都浪费在了无意义的Debug和体力活编码上。这也是为什么我不喜欢编程的原因——我本质上不是一个热衷于重复性工作的人。
-但在2023年之后，这门学科被彻底改变了。大语言模型在各项编程指标上不断提升，尤其是从2025年下半年开始，AI的编程能力已经远超人类水平，并且实打实能实现ROI的提升。回想Anthropic CEO早些时候的判断，是没有问题的：到了2026年底，全世界可能80%-90%的新代码都将由AI生成。">
+<meta name="twitter:title" content="当下智能的上限">
+<meta name="twitter:description" content="对AI的焦虑来源于对人工智能的能力边界不清楚，尤其是这几年AI的能力每年都是指数级别的上升，尤其在数学和编程这类人类一贯当做智力评价的题目，在AI的世界里，是最容易跨越过去的。这里就涉及到了人类智能和AI智能的本质理解。从这个维度来说，人类智能更像是通用智能，而AI智能，只是一个专用智能。
+前几天看到一个很好的说法，当下的AI更像是一种平庸的共识，而人类最珍贵的能力就是能够打破这些共识的灵光一闪，结合之前哈萨比斯对AGI的定义，回到1911年，AI能够自主推理出爱因斯坦的相对论。如果AI不能打破这个能力边界，那么它的上限就是确定性的。但是即便如此，这样的上限也是生产力效率的极大提高。">
 
 
 <script type="application/ld+json">
@@ -89,8 +86,8 @@
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "智能爆炸时代",
-      "item": "https://cmdlhh.github.io/posts/2026-02-15-%E6%99%BA%E8%83%BD%E7%88%86%E7%82%B8%E6%97%B6%E4%BB%A3/"
+      "name": "当下智能的上限",
+      "item": "https://cmdlhh.github.io/posts/2026-04-06-%E5%BD%93%E4%B8%8B%E6%99%BA%E8%83%BD%E7%9A%84%E4%B8%8A%E9%99%90/"
     }
   ]
 }
@@ -99,24 +96,24 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "智能爆炸时代",
-  "name": "智能爆炸时代",
-  "description": "AI的编程能力正在疯狂进步，已经到了让所有人类程序员面临淘汰的地步。这几天深度使用了GLM5，我明显感觉到：如果现在还在手工编码，就跟傻子没有区别。\n为什么我会如此焦虑？核心在于我是一个科班毕业生——本科和研究生学了7年软件工程。我深知这门学科在过去是一门相当耗费经验和时间的实践课：你需要花费数千甚至数万小时去反复编码、试错、解决Bug，才能从菜鸟工程师成长为资深工程师。而这其中，大量时间都浪费在了无意义的Debug和体力活编码上。这也是为什么我不喜欢编程的原因——我本质上不是一个热衷于重复性工作的人。\n但在2023年之后，这门学科被彻底改变了。大语言模型在各项编程指标上不断提升，尤其是从2025年下半年开始，AI的编程能力已经远超人类水平，并且实打实能实现ROI的提升。回想Anthropic CEO早些时候的判断，是没有问题的：到了2026年底，全世界可能80%-90%的新代码都将由AI生成。\n",
+  "headline": "当下智能的上限",
+  "name": "当下智能的上限",
+  "description": "对AI的焦虑来源于对人工智能的能力边界不清楚，尤其是这几年AI的能力每年都是指数级别的上升，尤其在数学和编程这类人类一贯当做智力评价的题目，在AI的世界里，是最容易跨越过去的。这里就涉及到了人类智能和AI智能的本质理解。从这个维度来说，人类智能更像是通用智能，而AI智能，只是一个专用智能。\n前几天看到一个很好的说法，当下的AI更像是一种平庸的共识，而人类最珍贵的能力就是能够打破这些共识的灵光一闪，结合之前哈萨比斯对AGI的定义，回到1911年，AI能够自主推理出爱因斯坦的相对论。如果AI不能打破这个能力边界，那么它的上限就是确定性的。但是即便如此，这样的上限也是生产力效率的极大提高。\n",
   "keywords": [
     
   ],
-  "articleBody": "AI的编程能力正在疯狂进步，已经到了让所有人类程序员面临淘汰的地步。这几天深度使用了GLM5，我明显感觉到：如果现在还在手工编码，就跟傻子没有区别。\n为什么我会如此焦虑？核心在于我是一个科班毕业生——本科和研究生学了7年软件工程。我深知这门学科在过去是一门相当耗费经验和时间的实践课：你需要花费数千甚至数万小时去反复编码、试错、解决Bug，才能从菜鸟工程师成长为资深工程师。而这其中，大量时间都浪费在了无意义的Debug和体力活编码上。这也是为什么我不喜欢编程的原因——我本质上不是一个热衷于重复性工作的人。\n但在2023年之后，这门学科被彻底改变了。大语言模型在各项编程指标上不断提升，尤其是从2025年下半年开始，AI的编程能力已经远超人类水平，并且实打实能实现ROI的提升。回想Anthropic CEO早些时候的判断，是没有问题的：到了2026年底，全世界可能80%-90%的新代码都将由AI生成。\n",
-  "wordCount" : "4",
+  "articleBody": "对AI的焦虑来源于对人工智能的能力边界不清楚，尤其是这几年AI的能力每年都是指数级别的上升，尤其在数学和编程这类人类一贯当做智力评价的题目，在AI的世界里，是最容易跨越过去的。这里就涉及到了人类智能和AI智能的本质理解。从这个维度来说，人类智能更像是通用智能，而AI智能，只是一个专用智能。\n前几天看到一个很好的说法，当下的AI更像是一种平庸的共识，而人类最珍贵的能力就是能够打破这些共识的灵光一闪，结合之前哈萨比斯对AGI的定义，回到1911年，AI能够自主推理出爱因斯坦的相对论。如果AI不能打破这个能力边界，那么它的上限就是确定性的。但是即便如此，这样的上限也是生产力效率的极大提高。\n",
+  "wordCount" : "2",
   "inLanguage": "en",
-  "datePublished": "2026-02-15T10:00:00+08:00",
-  "dateModified": "2026-02-15T10:00:00+08:00",
+  "datePublished": "2026-04-06T10:00:00+08:00",
+  "dateModified": "2026-04-06T10:00:00+08:00",
   "author":{
     "@type": "Person",
     "name": "Honghui Liu"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://cmdlhh.github.io/posts/2026-02-15-%E6%99%BA%E8%83%BD%E7%88%86%E7%82%B8%E6%97%B6%E4%BB%A3/"
+    "@id": "https://cmdlhh.github.io/posts/2026-04-06-%E5%BD%93%E4%B8%8B%E6%99%BA%E8%83%BD%E7%9A%84%E4%B8%8A%E9%99%90/"
   },
   "publisher": {
     "@type": "Organization",
@@ -194,16 +191,15 @@
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      智能爆炸时代
+      当下智能的上限
     </h1>
-    <div class="post-meta"><span title='2026-02-15 10:00:00 +0800 CST'>February 15, 2026</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Honghui Liu</span>
+    <div class="post-meta"><span title='2026-04-06 10:00:00 +0800 CST'>April 6, 2026</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Honghui Liu</span>
 
 </div>
   </header> 
 
-  <div class="post-content"><p>AI的编程能力正在疯狂进步，已经到了让所有人类程序员面临淘汰的地步。这几天深度使用了GLM5，我明显感觉到：如果现在还在手工编码，就跟傻子没有区别。</p>
-<p>为什么我会如此焦虑？核心在于我是一个科班毕业生——本科和研究生学了7年软件工程。我深知这门学科在过去是一门相当耗费经验和时间的实践课：你需要花费数千甚至数万小时去反复编码、试错、解决Bug，才能从菜鸟工程师成长为资深工程师。而这其中，大量时间都浪费在了无意义的Debug和体力活编码上。这也是为什么我不喜欢编程的原因——我本质上不是一个热衷于重复性工作的人。</p>
-<p>但在2023年之后，这门学科被彻底改变了。大语言模型在各项编程指标上不断提升，尤其是从2025年下半年开始，AI的编程能力已经远超人类水平，并且实打实能实现ROI的提升。回想Anthropic CEO早些时候的判断，是没有问题的：到了2026年底，全世界可能80%-90%的新代码都将由AI生成。</p>
+  <div class="post-content"><p>对AI的焦虑来源于对人工智能的能力边界不清楚，尤其是这几年AI的能力每年都是指数级别的上升，尤其在数学和编程这类人类一贯当做智力评价的题目，在AI的世界里，是最容易跨越过去的。这里就涉及到了人类智能和AI智能的本质理解。从这个维度来说，人类智能更像是通用智能，而AI智能，只是一个专用智能。</p>
+<p>前几天看到一个很好的说法，当下的AI更像是一种平庸的共识，而人类最珍贵的能力就是能够打破这些共识的灵光一闪，结合之前哈萨比斯对AGI的定义，回到1911年，AI能够自主推理出爱因斯坦的相对论。如果AI不能打破这个能力边界，那么它的上限就是确定性的。但是即便如此，这样的上限也是生产力效率的极大提高。</p>
 
 
   </div>
@@ -212,15 +208,10 @@
     <ul class="post-tags">
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://cmdlhh.github.io/posts/2026-04-06-%E5%BD%93%E4%B8%8B%E6%99%BA%E8%83%BD%E7%9A%84%E4%B8%8A%E9%99%90/">
-    <span class="title">« Prev</span>
-    <br>
-    <span>当下智能的上限</span>
-  </a>
-  <a class="next" href="https://cmdlhh.github.io/posts/2026-01-03-%E6%96%B0%E4%B8%96%E7%95%8C%E7%9A%84%E5%A4%A7%E9%97%A8%E6%AD%A3%E5%9C%A8%E7%BC%93%E7%BC%93%E6%89%93%E5%BC%80/">
+  <a class="next" href="https://cmdlhh.github.io/posts/2026-02-15-%E6%99%BA%E8%83%BD%E7%88%86%E7%82%B8%E6%97%B6%E4%BB%A3/">
     <span class="title">Next »</span>
     <br>
-    <span>新世界</span>
+    <span>智能爆炸时代</span>
   </a>
 </nav>
 

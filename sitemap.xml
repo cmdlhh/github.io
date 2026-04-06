@@ -2,17 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cmdlhh.github.io/thoughts/</loc>
-    <lastmod>2026-03-01T01:07:00+08:00</lastmod>
+    <loc>https://cmdlhh.github.io/posts/</loc>
+    <lastmod>2026-04-06T10:00:00+08:00</lastmod>
   </url><url>
     <loc>https://cmdlhh.github.io/</loc>
+    <lastmod>2026-04-06T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://cmdlhh.github.io/posts/2026-04-06-%E5%BD%93%E4%B8%8B%E6%99%BA%E8%83%BD%E7%9A%84%E4%B8%8A%E9%99%90/</loc>
+    <lastmod>2026-04-06T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://cmdlhh.github.io/thoughts/</loc>
     <lastmod>2026-03-01T01:07:00+08:00</lastmod>
   </url><url>
     <loc>https://cmdlhh.github.io/thoughts/2026-03-01-openclaw%E5%A4%AA%E5%A5%BD%E7%8E%A9%E4%BA%86/</loc>
     <lastmod>2026-03-01T01:07:00+08:00</lastmod>
-  </url><url>
-    <loc>https://cmdlhh.github.io/posts/</loc>
-    <lastmod>2026-02-15T10:00:00+08:00</lastmod>
   </url><url>
     <loc>https://cmdlhh.github.io/posts/2026-02-15-%E6%99%BA%E8%83%BD%E7%88%86%E7%82%B8%E6%97%B6%E4%BB%A3/</loc>
     <lastmod>2026-02-15T10:00:00+08:00</lastmod>
