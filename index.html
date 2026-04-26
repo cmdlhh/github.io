@@ -57,7 +57,21 @@
         }
 
     </style>
-</noscript><meta property="og:url" content="https://cmdlhh.github.io/">
+</noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XXXXXXXXXX');
+        }
+      </script><meta property="og:url" content="https://cmdlhh.github.io/">
   <meta property="og:site_name" content="Honghui Liu">
   <meta property="og:title" content="Honghui Liu">
   <meta property="og:description" content="分享个人的思考见解">
