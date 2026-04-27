@@ -20,8 +20,8 @@ enabled = true
 title = 'Honghui Liu'
 subtitle = '90后，福建泉州出生，目前定居在北京，喜欢数学，热爱思考，最近几年对于股市的交易博弈感兴趣。<br><br><br><br>人生短暂，当下是最好的时代，在这个地方分享自己的一些小小的见解。'
 imageUrl = '/profile.jpg'
-imageWidth = 600
-imageHeight = 600
+imageWidth = 280
+imageHeight = 280
 imageTitle = 'Honghui Liu'
 buttons = []
 
@@ -55,8 +55,8 @@ enabled = true
 title = 'Honghui Liu'
 subtitle = 'Born in the 90s in Quanzhou, Fujian, now living in Beijing. I love mathematics and thinking deeply. In recent years, I have been interested in trading games in the stock market.<br><br><br><br>Life is short, and the present is the best era. Here I share some of my small insights.'
 imageUrl = '/profile.jpg'
-imageWidth = 600
-imageHeight = 600
+imageWidth = 280
+imageHeight = 280
 imageTitle = 'Honghui Liu'
 buttons = []
 
