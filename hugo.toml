@@ -31,6 +31,9 @@ TocOpen = false
 hideFooter = true
 mainSections = ['posts', 'thoughts']
 
+# 访客地图开关
+showVisitorMap = true
+
 # 网站图标配置
 [params.assets]
 favicon = "favicon.svg"
