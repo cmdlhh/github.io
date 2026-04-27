@@ -1,58 +1,21 @@
 baseURL = 'https://cmdlhh.github.io/'
-languageCode = 'zh-cn'
 title = 'Honghui Liu'
 theme = 'PaperMod'
 
-# 允许渲染原始HTML
-[markup]
-[markup.goldmark]
-[markup.goldmark.renderer]
-unsafe = true
+defaultContentLanguage = 'zh'
+defaultContentLanguageInSubdir = false
 
-# 忽略HTML渲染警告
-ignoreLogs = ['warning-goldmark-raw-html']
+[languages]
+[languages.zh]
+languageCode = 'zh-cn'
+languageName = '中文'
+weight = 1
 
-# 主题配置
-[params]
-env = 'production'
-title = 'Honghui Liu'
+[languages.zh.params]
 description = '分享个人的思考见解'
 author = 'Honghui Liu'
-ShowReadingTime = true
-ShowShareButtons = false
-ShowPostNavLinks = true
-ShowBreadCrumbs = false
-ShowCodeCopyButtons = true
-disableSpecial1stPost = true
-disableScrollToTop = false
-displayFullLangName = false
-ShowToc = true
-TocOpen = false
-hideFooter = true
-mainSections = ['posts', 'thoughts']
 
-# 访客地图开关
-showVisitorMap = true
-
-# 网站图标配置
-[params.assets]
-favicon = "favicon.svg"
-favicon16x16 = "favicon-16x16.png"
-favicon32x32 = "favicon-32x32.png"
-apple_touch_icon = "apple-touch-icon.png"
-safari_pinned_tab = "safari-pinned-tab.svg"
-theme_color = "#ffffff"
-msapplication_TileColor = "#ffffff"
-
-# 社交图标配置
-socialIcons = [
-  { name = "github", url = "https://github.com/cmdlhh" },
-  { name = "douban", url = "https://www.douban.com/people/66784259" },
-  { name = "zhihu", url = "https://www.zhihu.com/people/liuhonghui" },
-]
-
-# 个人资料模式配置
-[params.profileMode]
+[languages.zh.params.profileMode]
 enabled = true
 title = 'Honghui Liu'
 subtitle = '90后，福建泉州出生，目前定居在北京，喜欢数学，热爱思考，最近几年对于股市的交易博弈感兴趣。<br><br><br><br>人生短暂，当下是最好的时代，在这个地方分享自己的一些小小的见解。'
@@ -62,24 +25,97 @@ imageHeight = 600
 imageTitle = 'Honghui Liu'
 buttons = []
 
-# 菜单配置
-[[menu.main]]
+[[languages.zh.menu.main]]
 identifier = 'home'
 name = '首页'
 url = '/'
 weight = 1
-[[menu.main]]
+[[languages.zh.menu.main]]
 identifier = 'posts'
 name = '文章'
 url = '/posts/'
 weight = 2
-[[menu.main]]
+[[languages.zh.menu.main]]
 identifier = 'thoughts'
 name = '随想'
 url = '/thoughts/'
 weight = 3
 
-# Google Analytics 4 配置
+[languages.en]
+languageCode = 'en'
+languageName = 'English'
+weight = 2
+
+[languages.en.params]
+description = 'Sharing personal thoughts and insights'
+author = 'Honghui Liu'
+
+[languages.en.params.profileMode]
+enabled = true
+title = 'Honghui Liu'
+subtitle = 'Born in the 90s in Quanzhou, Fujian, now living in Beijing. I love mathematics and thinking deeply. In recent years, I have been interested in trading games in the stock market.<br><br><br><br>Life is short, and the present is the best era. Here I share some of my small insights.'
+imageUrl = '/profile.jpg'
+imageWidth = 600
+imageHeight = 600
+imageTitle = 'Honghui Liu'
+buttons = []
+
+[[languages.en.menu.main]]
+identifier = 'home'
+name = 'Home'
+url = '/en/'
+weight = 1
+[[languages.en.menu.main]]
+identifier = 'posts'
+name = 'Posts'
+url = '/en/posts/'
+weight = 2
+[[languages.en.menu.main]]
+identifier = 'thoughts'
+name = 'Thoughts'
+url = '/en/thoughts/'
+weight = 3
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+ignoreLogs = ['warning-goldmark-raw-html']
+
+[params]
+env = 'production'
+title = 'Honghui Liu'
+ShowReadingTime = true
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = false
+ShowCodeCopyButtons = true
+disableSpecial1stPost = true
+disableScrollToTop = false
+displayFullLangName = true
+ShowToc = true
+TocOpen = false
+hideFooter = true
+mainSections = ['posts', 'thoughts']
+
+showVisitorMap = true
+
+[params.assets]
+favicon = "favicon.svg"
+favicon16x16 = "favicon-16x16.png"
+favicon32x32 = "favicon-32x32.png"
+apple_touch_icon = "apple-touch-icon.png"
+safari_pinned_tab = "safari-pinned-tab.svg"
+theme_color = "#ffffff"
+msapplication_TileColor = "#ffffff"
+
+socialIcons = [
+  { name = "github", url = "https://github.com/cmdlhh" },
+  { name = "douban", url = "https://www.douban.com/people/66784259" },
+  { name = "zhihu", url = "https://www.zhihu.com/people/liuhonghui" },
+]
+
 [services]
 [services.googleAnalytics]
 ID = 'G-7EV9HB9Z97'
