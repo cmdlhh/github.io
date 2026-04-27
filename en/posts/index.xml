@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Honghui Liu</title>
+    <link>http://localhost:1313/en/posts/</link>
+    <description>Recent content in Posts on Honghui Liu</description>
+    <generator>Hugo -- 0.151.0</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 06 Apr 2026 10:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Upper Limit of Current Intelligence</title>
+      <link>http://localhost:1313/en/posts/2026-04-06-%E5%BD%93%E4%B8%8B%E6%99%BA%E8%83%BD%E7%9A%84%E4%B8%8A%E9%99%90/</link>
+      <pubDate>Mon, 06 Apr 2026 10:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/en/posts/2026-04-06-%E5%BD%93%E4%B8%8B%E6%99%BA%E8%83%BD%E7%9A%84%E4%B8%8A%E9%99%90/</guid>
+      <description>&lt;p&gt;The anxiety about AI stems from the unclear boundaries of artificial intelligence capabilities, especially as AI&amp;rsquo;s capabilities have been exponentially increasing in recent years. The most notable is in mathematics and programming, areas that humans have traditionally used as intelligence benchmarks, which are the easiest for AI to overcome. This involves the fundamental understanding of human intelligence versus AI intelligence. From this dimension, human intelligence is more like general intelligence, while AI intelligence is just specialized intelligence.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A New World</title>
+      <link>http://localhost:1313/en/posts/2026-01-03-%E6%96%B0%E4%B8%96%E7%95%8C%E7%9A%84%E5%A4%A7%E9%97%A8%E6%AD%A3%E5%9C%A8%E7%BC%93%E7%BC%93%E6%89%93%E5%BC%80/</link>
+      <pubDate>Sat, 03 Jan 2026 17:45:00 +0800</pubDate>
+      <guid>http://localhost:1313/en/posts/2026-01-03-%E6%96%B0%E4%B8%96%E7%95%8C%E7%9A%84%E5%A4%A7%E9%97%A8%E6%AD%A3%E5%9C%A8%E7%BC%93%E7%BC%93%E6%89%93%E5%BC%80/</guid>
+      <description>&lt;p&gt;It took me two hours to rebuild my personal blog, leveraging the power of the currently popular AI IDE (TRAE), which was unimaginable in the past.&lt;/p&gt;
+&lt;p&gt;AI has lowered the barrier to programming to an unprecedented level of simplicity. Complex programming tasks can now be accomplished using only natural language.&lt;/p&gt;
+&lt;p&gt;The most promising directions I see for large models are code and mathematics. This change is revolutionary.&lt;/p&gt;
+&lt;p&gt;Many of our established ways of thinking need to change.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

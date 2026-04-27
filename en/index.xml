@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Honghui Liu</title>
+    <title>Home on Honghui Liu</title>
     <link>https://cmdlhh.github.io/en/</link>
-    <description>Recent content on Honghui Liu</description>
+    <description>Recent content in Home on Honghui Liu</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>en</language>
+    <lastBuildDate>Sun, 15 Feb 2026 10:00:00 +0800</lastBuildDate>
     <atom:link href="https://cmdlhh.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Era of Intelligence Explosion</title>
+      <link>https://cmdlhh.github.io/en/posts/2026-02-15-%E6%99%BA%E8%83%BD%E7%88%86%E7%82%B8%E6%97%B6%E4%BB%A3/</link>
+      <pubDate>Sun, 15 Feb 2026 10:00:00 +0800</pubDate>
+      <guid>https://cmdlhh.github.io/en/posts/2026-02-15-%E6%99%BA%E8%83%BD%E7%88%86%E7%82%B8%E6%97%B6%E4%BB%A3/</guid>
+      <description>&lt;p&gt;AI&amp;rsquo;s programming capabilities are improving at a crazy pace, reaching a point where all human programmers face obsolescence. After deeply using GLM5 these past few days, I clearly feel: if I were still hand-coding now, it would be no different from being a fool.&lt;/p&gt;
+&lt;p&gt;Why am I so anxious? The core reason is that I&amp;rsquo;m a formally trained graduate—I studied software engineering for 7 years during my undergraduate and graduate studies. I know deeply that this discipline used to be a practice-intensive and time-consuming field: you need to spend thousands or even tens of thousands of hours repeatedly coding, trial-and-error, and debugging to grow from a novice engineer to a senior engineer. And in this process, a large amount of time is wasted on meaningless debugging and manual coding. This is also why I don&amp;rsquo;t like programming—I&amp;rsquo;m fundamentally not someone who enjoys repetitive work.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A New World</title>
+      <link>https://cmdlhh.github.io/en/posts/2026-01-03-%E6%96%B0%E4%B8%96%E7%95%8C%E7%9A%84%E5%A4%A7%E9%97%A8%E6%AD%A3%E5%9C%A8%E7%BC%93%E7%BC%93%E6%89%93%E5%BC%80/</link>
+      <pubDate>Sat, 03 Jan 2026 17:45:00 +0800</pubDate>
+      <guid>https://cmdlhh.github.io/en/posts/2026-01-03-%E6%96%B0%E4%B8%96%E7%95%8C%E7%9A%84%E5%A4%A7%E9%97%A8%E6%AD%A3%E5%9C%A8%E7%BC%93%E7%BC%93%E6%89%93%E5%BC%80/</guid>
+      <description>&lt;p&gt;It took me two hours to rebuild my personal blog, leveraging the power of the currently popular AI IDE (TRAE), which was unimaginable in the past.&lt;/p&gt;
+&lt;p&gt;AI has lowered the barrier to programming to an unprecedented level of simplicity. Complex programming tasks can now be accomplished using only natural language.&lt;/p&gt;
+&lt;p&gt;The most promising directions I see for large models are code and mathematics. This change is revolutionary.&lt;/p&gt;
+&lt;p&gt;Many of our established ways of thinking need to change.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

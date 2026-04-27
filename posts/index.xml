@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Honghui Liu</title>
-    <link>https://cmdlhh.github.io/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content on Honghui Liu</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 15 Apr 2026 10:00:00 +0800</lastBuildDate>
-    <atom:link href="https://cmdlhh.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>十年后的软件工程</title>
-      <link>https://cmdlhh.github.io/posts/2026-04-15-%E5%8D%81%E5%B9%B4%E5%90%8E%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/</link>
+      <link>http://localhost:1313/posts/2026-04-15-%E5%8D%81%E5%B9%B4%E5%90%8E%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/</link>
       <pubDate>Wed, 15 Apr 2026 10:00:00 +0800</pubDate>
-      <guid>https://cmdlhh.github.io/posts/2026-04-15-%E5%8D%81%E5%B9%B4%E5%90%8E%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/</guid>
+      <guid>http://localhost:1313/posts/2026-04-15-%E5%8D%81%E5%B9%B4%E5%90%8E%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/</guid>
       <description>&lt;p&gt;畅想十年后的世界是一个有趣的事情，虽然大多数的人类预言都有可能是错误的，但是我在这里依然想要去试一试，尤其是对当下变革最厉害的软件工程行业。&lt;/p&gt;
 &lt;p&gt;软件工程行业的从业人数将大幅度增加，市场竞争会变得无比激烈。过去，这项工作一直被视为一个高门槛的技术工种，只有少数的从业者能吃到这份肉。如今，编程在大模型的加持下，成本被碾压到几乎等于零，任何人都可以通过大模型轻易地成为一个顶级程序员。自然语言就是最终的编程语言形态。那么，曾经因为时代原因红利早早上车吃到肉的这波人，在往后将不复存在。一个行业的入门门槛一旦足够低，就会带来极大的竞争压力，就像炒股一样，如果你不是真正的热爱，最终结果就是泯然众人，没有超额收益，无法在这个行业成为Top级别的人物。&lt;/p&gt;
 &lt;p&gt;人机交互的形态会有一次大的变化，终端市场可能会有新的黑马企业出现，对当下的市场进行一场新的革命。这个是一个自然而然推理出来的结果，既然编程的成本无限趋近于零，那么是否存在一个新的人机交互形态，千人千机，每个用户都有自己的个性化交互体验。而这个新的形态，一想就会让人特别兴奋。&lt;/p&gt;
@@ -22,27 +22,27 @@
     </item>
     <item>
       <title>当下智能的上限</title>
-      <link>https://cmdlhh.github.io/posts/2026-04-06-%E5%BD%93%E4%B8%8B%E6%99%BA%E8%83%BD%E7%9A%84%E4%B8%8A%E9%99%90/</link>
+      <link>http://localhost:1313/posts/2026-04-06-%E5%BD%93%E4%B8%8B%E6%99%BA%E8%83%BD%E7%9A%84%E4%B8%8A%E9%99%90/</link>
       <pubDate>Mon, 06 Apr 2026 10:00:00 +0800</pubDate>
-      <guid>https://cmdlhh.github.io/posts/2026-04-06-%E5%BD%93%E4%B8%8B%E6%99%BA%E8%83%BD%E7%9A%84%E4%B8%8A%E9%99%90/</guid>
+      <guid>http://localhost:1313/posts/2026-04-06-%E5%BD%93%E4%B8%8B%E6%99%BA%E8%83%BD%E7%9A%84%E4%B8%8A%E9%99%90/</guid>
       <description>&lt;p&gt;对AI的焦虑来源于对人工智能的能力边界不清楚，尤其是这几年AI的能力每年都是指数级别的上升，最显著的就是在数学和编程这类人类一贯当做智力评价的题目，在AI的世界里，是最容易跨越过去的。这里就涉及到了人类智能和AI智能的本质理解。从这个维度来说，人类智能更像是通用智能，而AI智能，只是一个专用智能。&lt;/p&gt;
 &lt;p&gt;前几天看到一个很好的说法，当下的AI更像是一种平庸的共识，而人类最珍贵的能力就是能够打破这些共识的灵光一闪，结合之前哈萨比斯对AGI的定义，回到1911年，AI能够自主推理出爱因斯坦的相对论。如果AI不能打破这个能力边界，那么它的上限就是确定性的。但是即便如此，这样的上限也是生产力效率的极大提高。&lt;/p&gt;
 &lt;p&gt;那么对于我们而言，需要思考的是，我们要把时间花在更有意义的能力建设上，比如持续思考能力，而不是技能熟练度。很多职业都将面临重塑，而职业的本身就是社会在发展过程中的中间产物，有什么职业是在十年二十年后依然能存在的，依然是有价值的，是需要我们认真思考的问题。&lt;/p&gt;</description>
     </item>
     <item>
       <title>智能爆炸时代</title>
-      <link>https://cmdlhh.github.io/posts/2026-02-15-%E6%99%BA%E8%83%BD%E7%88%86%E7%82%B8%E6%97%B6%E4%BB%A3/</link>
+      <link>http://localhost:1313/posts/2026-02-15-%E6%99%BA%E8%83%BD%E7%88%86%E7%82%B8%E6%97%B6%E4%BB%A3/</link>
       <pubDate>Sun, 15 Feb 2026 10:00:00 +0800</pubDate>
-      <guid>https://cmdlhh.github.io/posts/2026-02-15-%E6%99%BA%E8%83%BD%E7%88%86%E7%82%B8%E6%97%B6%E4%BB%A3/</guid>
+      <guid>http://localhost:1313/posts/2026-02-15-%E6%99%BA%E8%83%BD%E7%88%86%E7%82%B8%E6%97%B6%E4%BB%A3/</guid>
       <description>&lt;p&gt;AI的编程能力正在疯狂进步，已经到了让所有人类程序员面临淘汰的地步。这几天深度使用了GLM5，我明显感觉到：如果现在还在手工编码，就跟傻子没有区别。&lt;/p&gt;
 &lt;p&gt;为什么我会如此焦虑？核心在于我是一个科班毕业生——本科和研究生学了7年软件工程。我深知这门学科在过去是一门相当耗费经验和时间的实践课：你需要花费数千甚至数万小时去反复编码、试错、解决Bug，才能从菜鸟工程师成长为资深工程师。而这其中，大量时间都浪费在了无意义的Debug和体力活编码上。这也是为什么我不喜欢编程的原因——我本质上不是一个热衷于重复性工作的人。&lt;/p&gt;
 &lt;p&gt;但在2023年之后，这门学科被彻底改变了。大语言模型在各项编程指标上不断提升，尤其是从2025年下半年开始，AI的编程能力已经远超人类水平，并且实打实能实现ROI的提升。回想Anthropic CEO早些时候的判断，是没有问题的：到了2026年底，全世界可能80%-90%的新代码都将由AI生成。&lt;/p&gt;</description>
     </item>
     <item>
       <title>新世界</title>
-      <link>https://cmdlhh.github.io/posts/2026-01-03-%E6%96%B0%E4%B8%96%E7%95%8C%E7%9A%84%E5%A4%A7%E9%97%A8%E6%AD%A3%E5%9C%A8%E7%BC%93%E7%BC%93%E6%89%93%E5%BC%80/</link>
+      <link>http://localhost:1313/posts/2026-01-03-%E6%96%B0%E4%B8%96%E7%95%8C%E7%9A%84%E5%A4%A7%E9%97%A8%E6%AD%A3%E5%9C%A8%E7%BC%93%E7%BC%93%E6%89%93%E5%BC%80/</link>
       <pubDate>Sat, 03 Jan 2026 17:45:00 +0800</pubDate>
-      <guid>https://cmdlhh.github.io/posts/2026-01-03-%E6%96%B0%E4%B8%96%E7%95%8C%E7%9A%84%E5%A4%A7%E9%97%A8%E6%AD%A3%E5%9C%A8%E7%BC%93%E7%BC%93%E6%89%93%E5%BC%80/</guid>
+      <guid>http://localhost:1313/posts/2026-01-03-%E6%96%B0%E4%B8%96%E7%95%8C%E7%9A%84%E5%A4%A7%E9%97%A8%E6%AD%A3%E5%9C%A8%E7%BC%93%E7%BC%93%E6%89%93%E5%BC%80/</guid>
       <description>&lt;p&gt;花了两小时的时间重新搭建了个人博客，借助了当下流行的AI IDE（TRAE）的力量，这在以往是不可想象的。&lt;/p&gt;
 &lt;p&gt;AI让编程的门槛降低到了前所未有的简单，仅仅需要自然语言就可以完成复杂的编程任务。&lt;/p&gt;
 &lt;p&gt;目前看到的大模型最有希望能解决的方向就是代码和数学，这种改变是革命性的。&lt;/p&gt;
