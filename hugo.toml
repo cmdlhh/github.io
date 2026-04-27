@@ -75,3 +75,8 @@ identifier = 'thoughts'
 name = '随想'
 url = '/thoughts/'
 weight = 3
+
+# Google Analytics 4 配置
+[services]
+[services.googleAnalytics]
+ID = 'G-7EV9HB9Z97'
