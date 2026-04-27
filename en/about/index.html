@@ -181,26 +181,10 @@ Hello! I&rsquo;m Honghui Liu">
 </a>
 <div class="visitor-map" style="margin-top: 1.5rem; text-align: center;">
     <h3 style="font-size: 0.85rem; color: var(--secondary); margin-bottom: 0.75rem; font-weight: 500;">访客分布</h3>
-    <div id="visitor-map-container" style="display: inline-block; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); min-height: 200px;">
-        <div style="padding: 80px 20px; color: var(--secondary); font-size: 0.8rem;">加载中...</div>
-    </div>
+    <a href="https://clustrmaps.com/site/1c9v0" title="ClustrMaps" style="display: inline-block; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <img src="//www.clustrmaps.com/map_v2.png?d=XAr3Yb1HadqefTOKH3aYwoWaLkNlRqpda8qNjPQG_Yc&cl=ffffff" style="width: 280px; height: auto; display: block;">
+    </a>
 </div>
-<script>
-    
-    window.addEventListener('load', function() {
-        setTimeout(function() {
-            var container = document.getElementById('visitor-map-container');
-            if (container) {
-                container.innerHTML = '';
-                var script = document.createElement('script');
-                script.type = 'text/javascript';
-                script.async = true;
-                script.src = '//rf.revolvermaps.com/0/0/6.js?i=5w5p2d2s6d&m=7&c=e63100&cr1=ffffff&f=arial&l=0&bv=90&lx=-420&ly=420&hi=20&he=7&hc=a8ddff&rs=80';
-                container.appendChild(script);
-            }
-        }, 2000); 
-    });
-</script>
 
 
 <script>
