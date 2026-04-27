@@ -6,8 +6,30 @@
     <description>Recent content in Home on Honghui Liu</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Feb 2026 10:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2026 10:00:00 +0800</lastBuildDate>
     <atom:link href="https://cmdlhh.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Software Engineering in Ten Years</title>
+      <link>https://cmdlhh.github.io/en/posts/2026-04-15-%E5%8D%81%E5%B9%B4%E5%90%8E%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/</link>
+      <pubDate>Wed, 15 Apr 2026 10:00:00 +0800</pubDate>
+      <guid>https://cmdlhh.github.io/en/posts/2026-04-15-%E5%8D%81%E5%B9%B4%E5%90%8E%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/</guid>
+      <description>&lt;p&gt;Imagining the world ten years from now is an interesting thing. Although most human predictions may be wrong, I still want to give it a try, especially for the software engineering industry that is currently undergoing the most dramatic transformation.&lt;/p&gt;
+&lt;p&gt;The number of practitioners in the software engineering industry will increase dramatically, and market competition will become incredibly fierce. In the past, this work was seen as a high-barrier technical profession, where only a few practitioners could enjoy the benefits. Now, with the support of large models, the cost of programming has been crushed to almost zero, and anyone can easily become a top programmer through large models. Natural language is the ultimate form of programming language. Then, those who got on board early and enjoyed the benefits due to the times will no longer exist. Once the entry barrier of an industry is low enough, it will bring tremendous competitive pressure, just like stock trading—if you&amp;rsquo;re not truly passionate, the ultimate result is to be mediocre, with no excess returns, unable to become a top-level figure in this industry.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Upper Limit of Current Intelligence</title>
+      <link>https://cmdlhh.github.io/en/posts/2026-04-06-%E5%BD%93%E4%B8%8B%E6%99%BA%E8%83%BD%E7%9A%84%E4%B8%8A%E9%99%90/</link>
+      <pubDate>Mon, 06 Apr 2026 10:00:00 +0800</pubDate>
+      <guid>https://cmdlhh.github.io/en/posts/2026-04-06-%E5%BD%93%E4%B8%8B%E6%99%BA%E8%83%BD%E7%9A%84%E4%B8%8A%E9%99%90/</guid>
+      <description>&lt;p&gt;The anxiety about AI stems from the unclear boundaries of artificial intelligence capabilities, especially as AI&amp;rsquo;s capabilities have been exponentially increasing in recent years. The most notable is in mathematics and programming, areas that humans have traditionally used as intelligence benchmarks, which are the easiest for AI to overcome. This involves the fundamental understanding of human intelligence versus AI intelligence. From this dimension, human intelligence is more like general intelligence, while AI intelligence is just specialized intelligence.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>OpenClaw is So Fun</title>
+      <link>https://cmdlhh.github.io/en/thoughts/2026-03-01-openclaw%E5%A4%AA%E5%A5%BD%E7%8E%A9%E4%BA%86/</link>
+      <pubDate>Sun, 01 Mar 2026 01:07:00 +0800</pubDate>
+      <guid>https://cmdlhh.github.io/en/thoughts/2026-03-01-openclaw%E5%A4%AA%E5%A5%BD%E7%8E%A9%E4%BA%86/</guid>
+      <description>&lt;p&gt;OpenClaw is so fun! The creation and update of this article were all done through bot chat on Feishu. Throughout the process, I only gave various instructions without touching any code, and then let the Agent do the work automatically. It&amp;rsquo;s foreseeable that more and more work will be taken over by Agents in the future, and the information superhighway will welcome true prosperity.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Era of Intelligence Explosion</title>
       <link>https://cmdlhh.github.io/en/posts/2026-02-15-%E6%99%BA%E8%83%BD%E7%88%86%E7%82%B8%E6%97%B6%E4%BB%A3/</link>
@@ -15,6 +37,13 @@
       <guid>https://cmdlhh.github.io/en/posts/2026-02-15-%E6%99%BA%E8%83%BD%E7%88%86%E7%82%B8%E6%97%B6%E4%BB%A3/</guid>
       <description>&lt;p&gt;AI&amp;rsquo;s programming capabilities are improving at a crazy pace, reaching a point where all human programmers face obsolescence. After deeply using GLM5 these past few days, I clearly feel: if I were still hand-coding now, it would be no different from being a fool.&lt;/p&gt;
 &lt;p&gt;Why am I so anxious? The core reason is that I&amp;rsquo;m a formally trained graduate—I studied software engineering for 7 years during my undergraduate and graduate studies. I know deeply that this discipline used to be a practice-intensive and time-consuming field: you need to spend thousands or even tens of thousands of hours repeatedly coding, trial-and-error, and debugging to grow from a novice engineer to a senior engineer. And in this process, a large amount of time is wasted on meaningless debugging and manual coding. This is also why I don&amp;rsquo;t like programming—I&amp;rsquo;m fundamentally not someone who enjoys repetitive work.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Getting Closer</title>
+      <link>https://cmdlhh.github.io/en/thoughts/2026-01-25-%E8%B6%8A%E6%9D%A5%E8%B6%8A%E6%8E%A5%E8%BF%91/</link>
+      <pubDate>Sun, 25 Jan 2026 15:25:00 +0800</pubDate>
+      <guid>https://cmdlhh.github.io/en/thoughts/2026-01-25-%E8%B6%8A%E6%9D%A5%E8%B6%8A%E6%8E%A5%E8%BF%91/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been profitable in short-term trading for almost a year now, and I have reason to believe that I&amp;rsquo;m getting closer and closer to true enlightenment. Next, I need to crystallize these thoughts and experiences in my mind into a trading system, to free up my time and allow myself more time to think and explore new things.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A New World</title>
@@ -25,6 +54,13 @@
 &lt;p&gt;AI has lowered the barrier to programming to an unprecedented level of simplicity. Complex programming tasks can now be accomplished using only natural language.&lt;/p&gt;
 &lt;p&gt;The most promising directions I see for large models are code and mathematics. This change is revolutionary.&lt;/p&gt;
 &lt;p&gt;Many of our established ways of thinking need to change.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Eve of Era Transformation</title>
+      <link>https://cmdlhh.github.io/en/thoughts/2026-01-03-%E6%97%B6%E4%BB%A3%E5%8F%98%E9%9D%A9%E7%9A%84%E5%89%8D%E5%A4%95/</link>
+      <pubDate>Sat, 03 Jan 2026 16:30:00 +0800</pubDate>
+      <guid>https://cmdlhh.github.io/en/thoughts/2026-01-03-%E6%97%B6%E4%BB%A3%E5%8F%98%E9%9D%A9%E7%9A%84%E5%89%8D%E5%A4%95/</guid>
+      <description>&lt;p&gt;We are standing on the eve of a massive era transformation. Every time I think about this, I get incredibly excited. The core element of all this is AI, especially the powerful capabilities of current LLMs. I still position it as a productivity tool, but the capabilities this tool demonstrates are like human intelligence, and in some sense have far exceeded humans. This dimension of transcendence is something that no previous productivity revolution has encountered. What will happen in the future? I&amp;rsquo;m really looking forward to it.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

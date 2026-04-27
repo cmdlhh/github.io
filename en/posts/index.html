@@ -169,6 +169,20 @@
 
 <article class="post-entry">
   <header class="entry-header">
+    <h2>Software Engineering in Ten Years</h2>
+    <div class="entry-meta">2026 Apr
+    </div>
+  </header>
+  <div class="entry-content">
+    <p>Imagining the world ten years from now is an interesting thing. Although most human predictions may be wrong, I still want to give it a try, especially for the software engineering industry that is currently undergoing the most dramatic transformation.
+The number of practitioners in the software engineering industry will increase dramatically, and market competition will become incredibly fierce. In the past, this work was seen as a high-barrier technical profession, where only a few practitioners could enjoy the benefits. Now, with the support of large models, the cost of programming has been crushed to almost zero, and anyone can easily become a top programmer through large models. Natural language is the ultimate form of programming language. Then, those who got on board early and enjoyed the benefits due to the times will no longer exist. Once the entry barrier of an industry is low enough, it will bring tremendous competitive pressure, just like stock trading—if you’re not truly passionate, the ultimate result is to be mediocre, with no excess returns, unable to become a top-level figure in this industry.
+...</p>
+  </div>
+  <a class="entry-link" aria-label="post link to Software Engineering in Ten Years" href="http://localhost:1313/en/posts/2026-04-15-%E5%8D%81%E5%B9%B4%E5%90%8E%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"></a>
+</article>
+
+<article class="post-entry">
+  <header class="entry-header">
     <h2>The Upper Limit of Current Intelligence</h2>
     <div class="entry-meta">2026 Apr
     </div>
@@ -204,10 +218,26 @@ Many of our established ways of thinking need to change.
 </a>
 <div class="visitor-map" style="margin-top: 1.5rem; text-align: center;">
     <h3 style="font-size: 0.85rem; color: var(--secondary); margin-bottom: 0.75rem; font-weight: 500;">访客分布</h3>
-    <div style="display: inline-block; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-        <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5w5p2d2s6d&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
+    <div id="visitor-map-container" style="display: inline-block; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); min-height: 200px;">
+        <div style="padding: 80px 20px; color: var(--secondary); font-size: 0.8rem;">加载中...</div>
     </div>
 </div>
+<script>
+    
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            var container = document.getElementById('visitor-map-container');
+            if (container) {
+                container.innerHTML = '';
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.async = true;
+                script.src = '//rf.revolvermaps.com/0/0/6.js?i=5w5p2d2s6d&m=7&c=e63100&cr1=ffffff&f=arial&l=0&bv=90&lx=-420&ly=420&hi=20&he=7&hc=a8ddff&rs=80';
+                container.appendChild(script);
+            }
+        }, 2000); 
+    });
+</script>
 
 
 <script>
