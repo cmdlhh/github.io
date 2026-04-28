@@ -59,7 +59,24 @@ Many of our established ways of thinking need to change.">
         }
 
     </style>
-</noscript><link rel="stylesheet" href="/css/custom.css">
+</noscript>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<style>
+    :root {
+        --theme: #FDF5E6;
+        --entry: #FFF8DC;
+        --primary: #4A3728;
+        --secondary: #6B5B4F;
+        --content: #3D3229;
+    }
+</style>
+
+
+<link rel="preload" href="/css/custom.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/custom.css"></noscript>
 
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-7EV9HB9Z97"></script>
       <script>
@@ -262,12 +279,48 @@ Many of our established ways of thinking need to change.">
         <path d="M12 6H0l6-6z" />
     </svg>
 </a>
-<div class="visitor-map" style="margin-top: 1.5rem; text-align: center;">
+<div class="visitor-map" style="margin-top: 1.5rem; text-align: center; min-height: 160px;">
     <h3 style="font-size: 0.85rem; color: var(--secondary); margin-bottom: 0.75rem; font-weight: 500;">访客分布</h3>
     <a href="https://clustrmaps.com/site/1c9v0" title="ClustrMaps" style="display: inline-block; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-        <img src="//www.clustrmaps.com/map_v2.png?d=XAr3Yb1HadqefTOKH3aYwoWaLkNlRqpda8qNjPQG_Yc&cl=ffffff" style="width: 280px; height: auto; display: block;">
+        <img 
+            data-src="//www.clustrmaps.com/map_v2.png?d=XAr3Yb1HadqefTOKH3aYwoWaLkNlRqpda8qNjPQG_Yc&cl=ffffff" 
+            alt="访客分布地图"
+            style="width: 280px; height: auto; display: block;"
+            class="lazyload"
+        >
     </a>
 </div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var lazyImages = document.querySelectorAll('img.lazyload');
+        
+        if ('IntersectionObserver' in window) {
+            var imageObserver = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        var img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazyload');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            }, {
+                rootMargin: '50px 0px'
+            });
+            
+            lazyImages.forEach(function(img) {
+                imageObserver.observe(img);
+            });
+        } else {
+            
+            lazyImages.forEach(function(img) {
+                img.src = img.dataset.src;
+            });
+        }
+    });
+</script>
 
 
 <script>
