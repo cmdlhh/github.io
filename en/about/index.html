@@ -197,9 +197,9 @@ Hello! I&rsquo;m Honghui Liu">
         <path d="M12 6H0l6-6z" />
     </svg>
 </a>
-<div class="visitor-map-container" style="margin-top: 2rem; text-align: center;">
+<div class="visitor-map-wrapper" style="margin-top: 2rem; text-align: center;">
     
-    <button class="visitor-map-toggle" onclick="toggleVisitorMap()" style="
+    <button id="visitorMapBtn" onclick="toggleVisitorMap()" style="
         background: linear-gradient(135deg, var(--entry) 0%, var(--tertiary) 100%);
         border: 1px solid var(--border);
         border-radius: 25px;
@@ -212,19 +212,21 @@ Hello! I&rsquo;m Honghui Liu">
         gap: 0.5rem;
         transition: all 0.3s ease;
         box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    ">
-        <svg class="map-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition: transform 0.3s ease;">
+    " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" 
+    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.08)'">
+        <span style="width: 6px; height: 6px; background: #4CAF50; border-radius: 50%; display: inline-block;"></span>
+        <svg id="mapIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition: transform 0.3s ease;">
             <circle cx="12" cy="12" r="10"></circle>
             <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
         </svg>
-        <span class="toggle-text">访客分布</span>
-        <svg class="chevron-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition: transform 0.3s ease;">
+        <span>访客分布</span>
+        <svg id="chevronIcon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition: transform 0.3s ease;">
             <polyline points="6 9 12 15 18 9"></polyline>
         </svg>
     </button>
     
     
-    <div class="visitor-map-content" style="
+    <div id="visitorMapContent" style="
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.4s ease, opacity 0.3s ease, margin 0.3s ease;
@@ -242,10 +244,10 @@ Hello! I&rsquo;m Honghui Liu">
         ">
             <a href="https://clustrmaps.com/site/1c9v0" title="查看详细访客统计" style="display: block; border-radius: 8px; overflow: hidden;">
                 <img 
+                    id="visitorMapImg"
                     data-src="//www.clustrmaps.com/map_v2.png?d=XAr3Yb1HadqefTOKH3aYwoWaLkNlRqpda8qNjPQG_Yc&cl=ffffff" 
                     alt="访客分布地图"
                     style="width: 260px; height: auto; display: block; transition: transform 0.3s ease;"
-                    class="lazyload visitor-map-img"
                     onmouseover="this.style.transform='scale(1.02)'"
                     onmouseout="this.style.transform='scale(1)'"
                 >
@@ -257,81 +259,37 @@ Hello! I&rsquo;m Honghui Liu">
     </div>
 </div>
 
-<style>
-    .visitor-map-toggle:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.12) !important;
-    }
-    
-    .visitor-map-container.expanded .visitor-map-content {
-        max-height: 400px;
-        opacity: 1;
-        margin-top: 0.5rem;
-    }
-    
-    .visitor-map-container.expanded .chevron-icon {
-        transform: rotate(180deg);
-    }
-    
-    .visitor-map-container.expanded .map-icon {
-        transform: rotate(15deg);
-    }
-    
-    @keyframes pulse {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0.7; }
-    }
-    
-    .visitor-map-toggle::before {
-        content: '';
-        width: 6px;
-        height: 6px;
-        background: #4CAF50;
-        border-radius: 50%;
-        display: inline-block;
-        animation: pulse 2s infinite;
-    }
-</style>
-
 <script>
-    
-    function toggleVisitorMap() {
-        const container = document.querySelector('.visitor-map-container');
-        container.classList.toggle('expanded');
+    (function() {
+        var isExpanded = false;
         
-        
-        if (container.classList.contains('expanded')) {
-            const img = container.querySelector('img.lazyload');
-            if (img && img.dataset.src) {
-                img.src = img.dataset.src;
-                img.classList.remove('lazyload');
-            }
-        }
-    }
-    
-    
-    document.addEventListener("DOMContentLoaded", function() {
-        var lazyImages = document.querySelectorAll('img.lazyload');
-        
-        if ('IntersectionObserver' in window) {
-            var imageObserver = new IntersectionObserver(function(entries, observer) {
-                entries.forEach(function(entry) {
-                    if (entry.isIntersecting) {
-                        var img = entry.target;
-                        img.src = img.dataset.src;
-                        img.classList.remove('lazyload');
-                        imageObserver.unobserve(img);
-                    }
-                });
-            }, {
-                rootMargin: '50px 0px'
-            });
+        window.toggleVisitorMap = function() {
+            isExpanded = !isExpanded;
+            var content = document.getElementById('visitorMapContent');
+            var chevron = document.getElementById('chevronIcon');
+            var mapIcon = document.getElementById('mapIcon');
+            var img = document.getElementById('visitorMapImg');
             
-            lazyImages.forEach(function(img) {
-                imageObserver.observe(img);
-            });
-        }
-    });
+            if (isExpanded) {
+                content.style.maxHeight = '400px';
+                content.style.opacity = '1';
+                content.style.marginTop = '0.5rem';
+                chevron.style.transform = 'rotate(180deg)';
+                mapIcon.style.transform = 'rotate(15deg)';
+                
+                
+                if (img && img.dataset.src && !img.src) {
+                    img.src = img.dataset.src;
+                }
+            } else {
+                content.style.maxHeight = '0';
+                content.style.opacity = '0';
+                content.style.marginTop = '0';
+                chevron.style.transform = 'rotate(0deg)';
+                mapIcon.style.transform = 'rotate(0deg)';
+            }
+        };
+    })();
 </script>
 
 
