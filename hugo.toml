@@ -18,10 +18,10 @@ author = 'Honghui Liu'
 [languages.zh.params.profileMode]
 enabled = true
 title = 'Honghui Liu'
-subtitle = '90后，福建泉州出生，目前定居在北京，喜欢数学，热爱思考，最近几年对于股市的交易博弈感兴趣。<br><br><br><br>人生短暂，当下是最好的时代，在这个地方分享自己的一些小小的见解。'
+subtitle = '喜欢数学，热爱思考，对股市交易博弈感兴趣。人生短暂，当下是最好的时代，在这里分享一些小小的见解。'
 imageUrl = '/profile.jpg'
-imageWidth = 280
-imageHeight = 280
+imageWidth = 100
+imageHeight = 100
 imageTitle = 'Honghui Liu'
 buttons = []
 
@@ -53,10 +53,10 @@ author = 'Honghui Liu'
 [languages.en.params.profileMode]
 enabled = true
 title = 'Honghui Liu'
-subtitle = 'Born in the 90s in Quanzhou, Fujian, now living in Beijing. I love mathematics and thinking deeply. In recent years, I have been interested in trading games in the stock market.<br><br><br><br>Life is short, and the present is the best era. Here I share some of my small insights.'
+subtitle = 'I love mathematics and thinking deeply. Interested in stock market trading. Life is short, the present is the best era. Here I share some of my insights.'
 imageUrl = '/profile.jpg'
-imageWidth = 280
-imageHeight = 280
+imageWidth = 100
+imageHeight = 100
 imageTitle = 'Honghui Liu'
 buttons = []
 
@@ -82,6 +82,16 @@ weight = 3
 unsafe = true
 
 ignoreLogs = ['warning-goldmark-raw-html']
+
+[imaging]
+quality = 85
+resampleFilter = "Lanczos"
+
+[minify]
+disableCSS = false
+disableHTML = false
+disableJS = false
+disableJSON = false
 
 [params]
 env = 'production'
@@ -109,6 +119,7 @@ apple_touch_icon = "apple-touch-icon.png"
 safari_pinned_tab = "safari-pinned-tab.svg"
 theme_color = "#ffffff"
 msapplication_TileColor = "#ffffff"
+customCSS = ["css/custom.css"]
 
 socialIcons = [
   { name = "github", url = "https://github.com/cmdlhh" },

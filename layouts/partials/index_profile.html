@@ -1,0 +1,60 @@
+<div class="profile">
+    {{- with site.Params.profileMode }}
+    <div class="profile_inner" style="max-width: 800px; margin: 0 auto; padding: 2rem 1rem; display: flex; align-items: center; gap: 2rem;">
+        
+        <!-- 头像 -->
+        {{- if .imageUrl }}
+        <div class="profile-image" style="flex-shrink: 0;">
+            <img src="{{ .imageUrl }}" alt="{{ .imageTitle | default site.Title }}"
+                width="100" height="100" style="border-radius: 50%; object-fit: cover;">
+        </div>
+        {{- end }}
+        
+        <!-- 文字内容 -->
+        <div class="profile-content" style="flex: 1;">
+            <h1 style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--primary); font-family: 'Georgia', 'Times New Roman', serif; letter-spacing: -0.5px;">{{ .title }}</h1>
+            <p style="font-size: 1rem; color: var(--secondary); line-height: 1.6; margin-bottom: 1rem;">{{ .subtitle | plainify }}</p>
+
+            {{- with site.Params.socialIcons }}
+            <div class="social-icons">
+                {{- range . }}
+                <a href="{{ trim .url " " | safeURL }}" target="_blank" rel="noopener noreferrer me"
+                    title="{{ (.title | default .name) | title }}" style="color: var(--secondary); margin-right: 1rem; text-decoration: underline;">
+                    {{ .name }}
+                </a>
+                {{- end }}
+            </div>
+            {{- end }}
+        </div>
+    </div>
+    {{- end}}
+</div>
+
+<!-- 文章列表 - 时间线样式 -->
+<div style="max-width: 800px; margin: 0 auto; padding: 0 1rem 3rem;">
+    
+    <!-- 文章部分 -->
+    <section style="margin-bottom: 3rem;">
+        <h2 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 1.5rem; color: var(--primary);">文章</h2>
+        {{- $posts := where site.RegularPages "Type" "posts" }}
+        {{- range $posts }}
+        <div style="margin-bottom: 1rem; display: flex; align-items: baseline; gap: 1rem;">
+            <span style="color: var(--secondary); font-size: 0.9rem; min-width: 80px;">{{ .Date.Format "2006-01" }}</span>
+            <a href="{{ .Permalink }}" style="color: var(--primary); text-decoration: none; font-size: 1rem;">{{ .Title }}</a>
+        </div>
+        {{- end }}
+    </section>
+
+    <!-- 随想部分 -->
+    <section style="margin-bottom: 3rem;">
+        <h2 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 1.5rem; color: var(--primary);">随想</h2>
+        {{- $thoughts := where site.RegularPages "Type" "thoughts" }}
+        {{- range $thoughts }}
+        <div style="margin-bottom: 1rem; display: flex; align-items: baseline; gap: 1rem;">
+            <span style="color: var(--secondary); font-size: 0.9rem; min-width: 80px;">{{ .Date.Format "2006-01" }}</span>
+            <a href="{{ .Permalink }}" style="color: var(--primary); text-decoration: none; font-size: 1rem;">{{ .Title }}</a>
+        </div>
+        {{- end }}
+    </section>
+
+</div>
