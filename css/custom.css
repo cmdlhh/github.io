@@ -1,62 +1,126 @@
-/* 护眼浅黄色背景主题 */
+/* 极简白底黑字风格 - 参考 jasonwei.net */
 :root {
-    /* 主背景色 - 浅黄色 */
-    --theme: #FDF5E6;
-    --entry: #FFF8DC;
+    /* 主背景 - 纯白 */
+    --theme: #ffffff;
+    --entry: #ffffff;
     
-    /* 文字颜色 - 深褐色，柔和不刺眼 */
-    --primary: #4A3728;
-    --secondary: #6B5B4F;
-    --content: #3D3229;
+    /* 文字颜色 */
+    --primary: #1a1a1a;
+    --secondary: #666666;
+    --content: #333333;
     
     /* 辅助色 */
-    --tertiary: #F5E6D3;
-    --code-block-bg: #F8F0E0;
-    --code-bg: #F8F0E0;
-    --border: #E8DCC8;
+    --tertiary: #f5f5f5;
+    --code-block-bg: #f8f8f8;
+    --code-bg: #f8f8f8;
+    --border: #e5e5e5;
 }
 
-/* 深色模式保持原样或调整为深褐色护眼 */
+/* 深色模式 */
 .dark {
-    --theme: #2C2419;
-    --entry: #3D3229;
-    --primary: #E8DCC8;
-    --secondary: #B8A99A;
-    --content: #D4C4B0;
-    --tertiary: #4A3F35;
-    --code-block-bg: #3D3229;
-    --code-bg: #3D3229;
-    --border: #5A4D40;
+    --theme: #1a1a1a;
+    --entry: #242424;
+    --primary: #ffffff;
+    --secondary: #a0a0a0;
+    --content: #e0e0e0;
+    --tertiary: #333333;
+    --code-block-bg: #2a2a2a;
+    --code-bg: #2a2a2a;
+    --border: #404040;
 }
 
 /* 页面背景 */
 body {
     background-color: var(--theme);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
 }
 
-/* 文章内容区域 */
-.post-content {
-    background-color: var(--entry);
-}
-
-/* 列表页面背景 */
-.list {
-    background: var(--theme);
-}
-
-/* 链接颜色调整 */
+/* 链接样式 */
 a {
-    color: #8B6914;
+    color: var(--primary);
+    text-decoration: none;
 }
 
 a:hover {
-    color: #6B4E0A;
+    text-decoration: underline;
 }
 
-.dark a {
-    color: #D4A84B;
+/* 导航栏简化 */
+.nav {
+    background: var(--theme);
+    border-bottom: 1px solid var(--border);
 }
 
-.dark a:hover {
-    color: #E8C97A;
+.nav a {
+    color: var(--secondary);
+    font-size: 0.9rem;
+}
+
+.nav a:hover {
+    color: var(--primary);
+}
+
+/* 文章列表样式 */
+.post-entry {
+    background: var(--theme);
+    border: none;
+    padding: 0.5rem 0;
+}
+
+.post-entry:hover {
+    background: var(--tertiary);
+}
+
+/* 标题样式 */
+h1, h2, h3 {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+/* 按钮简化 */
+.button {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background: var(--tertiary);
+}
+
+/* 代码块 */
+pre {
+    background: var(--code-block-bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+
+/* 引用块 */
+blockquote {
+    border-left: 3px solid var(--secondary);
+    background: transparent;
+    padding-left: 1rem;
+    color: var(--secondary);
+}
+
+/* 分隔线 */
+hr {
+    border: none;
+    border-top: 1px solid var(--border);
+}
+
+/* 隐藏复杂元素 */
+.post-cover,
+.post-thumbnail {
+    display: none;
+}
+
+/* 页脚简化 */
+.footer {
+    border-top: 1px solid var(--border);
+    padding: 2rem 0;
+    margin-top: 3rem;
 }

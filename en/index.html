@@ -180,109 +180,54 @@
     </nav>
 </header>
 <main class="main"><div class="profile">
-    <div class="profile_inner">
-        <div class="profile-image">
-            <img src="/profile.jpg" alt="Honghui Liu"
-                width="280" height="280">
-        </div>
-        <div class="profile-content">
-            <p class="subtitle">Born in the 90s in Quanzhou, Fujian, now living in Beijing. I love mathematics and thinking deeply. In recent years, I have been interested in trading games in the stock market.<br><br><br><br>Life is short, and the present is the best era. Here I share some of my small insights.</p>
-        </div>
+    <div class="profile_inner" style="max-width: 800px; margin: 0 auto; padding: 2rem 1rem;">
+        <h1 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--primary);">Honghui Liu</h1>
+        <p style="font-size: 1rem; color: var(--secondary); line-height: 1.6; margin-bottom: 2rem;">I love mathematics and thinking deeply. Interested in stock market trading. Life is short, the present is the best era. Here I share some of my insights.</p>
     </div>
 </div>
 
 
-<div class="visitor-map-wrapper" style="margin-top: 3rem; text-align: center; padding-bottom: 2rem;">
-    <button id="visitorMapBtnHome" onclick="toggleVisitorMapHome()" style="
-        background: linear-gradient(135deg, var(--entry) 0%, var(--tertiary) 100%);
-        border: 1px solid var(--border);
-        border-radius: 25px;
-        padding: 0.6rem 1.5rem;
-        font-size: 0.85rem;
-        color: var(--secondary);
-        cursor: pointer;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        transition: all 0.3s ease;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)'" 
-    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.08)'">
-        <span style="width: 6px; height: 6px; background: #4CAF50; border-radius: 50%; display: inline-block;"></span>
-        <svg id="mapIconHome" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition: transform 0.3s ease;">
-            <circle cx="12" cy="12" r="10"></circle>
-            <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-        </svg>
-        <span>访客分布</span>
-        <svg id="chevronIconHome" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition: transform 0.3s ease;">
-            <polyline points="6 9 12 15 18 9"></polyline>
-        </svg>
-    </button>
+<div style="max-width: 800px; margin: 0 auto; padding: 0 1rem 3rem;">
     
-    <div id="visitorMapContentHome" style="
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.4s ease, opacity 0.3s ease, margin 0.3s ease;
-        opacity: 0;
-        margin-top: 0;
-    ">
-        <div style="
-            display: inline-block;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            margin-top: 1rem;
-            background: var(--entry);
-            padding: 8px;
-        ">
-            <a href="https://clustrmaps.com/site/1c9v0" title="查看详细访客统计" style="display: block; border-radius: 8px; overflow: hidden;">
-                <img 
-                    id="visitorMapImgHome"
-                    data-src="//www.clustrmaps.com/map_v2.png?d=XAr3Yb1HadqefTOKH3aYwoWaLkNlRqpda8qNjPQG_Yc&cl=ffffff" 
-                    alt="访客分布地图"
-                    style="width: 260px; height: auto; display: block; transition: transform 0.3s ease;"
-                    onmouseover="this.style.transform='scale(1.02)'"
-                    onmouseout="this.style.transform='scale(1)'"
-                >
-            </a>
+    
+    <section style="margin-bottom: 3rem;">
+        <h2 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 1.5rem; color: var(--primary);">文章</h2>
+        <div style="margin-bottom: 1rem; display: flex; align-items: baseline; gap: 1rem;">
+            <span style="color: var(--secondary); font-size: 0.9rem; min-width: 80px;">2026-04</span>
+            <a href="https://cmdlhh.github.io/en/posts/2026-04-15-%E5%8D%81%E5%B9%B4%E5%90%8E%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/" style="color: var(--primary); text-decoration: none; font-size: 1rem;">Software Engineering in Ten Years</a>
         </div>
-        <p style="font-size: 0.75rem; color: var(--secondary); margin-top: 0.75rem; opacity: 0.8;">
-            来自世界各地的访客 ✈️
-        </p>
-    </div>
-</div>
+        <div style="margin-bottom: 1rem; display: flex; align-items: baseline; gap: 1rem;">
+            <span style="color: var(--secondary); font-size: 0.9rem; min-width: 80px;">2026-04</span>
+            <a href="https://cmdlhh.github.io/en/posts/2026-04-06-%E5%BD%93%E4%B8%8B%E6%99%BA%E8%83%BD%E7%9A%84%E4%B8%8A%E9%99%90/" style="color: var(--primary); text-decoration: none; font-size: 1rem;">The Upper Limit of Current Intelligence</a>
+        </div>
+        <div style="margin-bottom: 1rem; display: flex; align-items: baseline; gap: 1rem;">
+            <span style="color: var(--secondary); font-size: 0.9rem; min-width: 80px;">2026-02</span>
+            <a href="https://cmdlhh.github.io/en/posts/2026-02-15-%E6%99%BA%E8%83%BD%E7%88%86%E7%82%B8%E6%97%B6%E4%BB%A3/" style="color: var(--primary); text-decoration: none; font-size: 1rem;">The Era of Intelligence Explosion</a>
+        </div>
+        <div style="margin-bottom: 1rem; display: flex; align-items: baseline; gap: 1rem;">
+            <span style="color: var(--secondary); font-size: 0.9rem; min-width: 80px;">2026-01</span>
+            <a href="https://cmdlhh.github.io/en/posts/2026-01-03-%E6%96%B0%E4%B8%96%E7%95%8C%E7%9A%84%E5%A4%A7%E9%97%A8%E6%AD%A3%E5%9C%A8%E7%BC%93%E7%BC%93%E6%89%93%E5%BC%80/" style="color: var(--primary); text-decoration: none; font-size: 1rem;">A New World</a>
+        </div>
+    </section>
 
-<script>
-    (function() {
-        var isExpandedHome = false;
-        
-        window.toggleVisitorMapHome = function() {
-            isExpandedHome = !isExpandedHome;
-            var content = document.getElementById('visitorMapContentHome');
-            var chevron = document.getElementById('chevronIconHome');
-            var mapIcon = document.getElementById('mapIconHome');
-            var img = document.getElementById('visitorMapImgHome');
-            
-            if (isExpandedHome) {
-                content.style.maxHeight = '400px';
-                content.style.opacity = '1';
-                content.style.marginTop = '0.5rem';
-                chevron.style.transform = 'rotate(180deg)';
-                mapIcon.style.transform = 'rotate(15deg)';
-                
-                if (img && img.dataset.src && !img.src) {
-                    img.src = img.dataset.src;
-                }
-            } else {
-                content.style.maxHeight = '0';
-                content.style.opacity = '0';
-                content.style.marginTop = '0';
-                chevron.style.transform = 'rotate(0deg)';
-                mapIcon.style.transform = 'rotate(0deg)';
-            }
-        };
-    })();
-</script>
+    
+    <section style="margin-bottom: 3rem;">
+        <h2 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 1.5rem; color: var(--primary);">随想</h2>
+        <div style="margin-bottom: 1rem; display: flex; align-items: baseline; gap: 1rem;">
+            <span style="color: var(--secondary); font-size: 0.9rem; min-width: 80px;">2026-03</span>
+            <a href="https://cmdlhh.github.io/en/thoughts/2026-03-01-openclaw%E5%A4%AA%E5%A5%BD%E7%8E%A9%E4%BA%86/" style="color: var(--primary); text-decoration: none; font-size: 1rem;">OpenClaw is So Fun</a>
+        </div>
+        <div style="margin-bottom: 1rem; display: flex; align-items: baseline; gap: 1rem;">
+            <span style="color: var(--secondary); font-size: 0.9rem; min-width: 80px;">2026-01</span>
+            <a href="https://cmdlhh.github.io/en/thoughts/2026-01-25-%E8%B6%8A%E6%9D%A5%E8%B6%8A%E6%8E%A5%E8%BF%91/" style="color: var(--primary); text-decoration: none; font-size: 1rem;">Getting Closer</a>
+        </div>
+        <div style="margin-bottom: 1rem; display: flex; align-items: baseline; gap: 1rem;">
+            <span style="color: var(--secondary); font-size: 0.9rem; min-width: 80px;">2026-01</span>
+            <a href="https://cmdlhh.github.io/en/thoughts/2026-01-03-%E6%97%B6%E4%BB%A3%E5%8F%98%E9%9D%A9%E7%9A%84%E5%89%8D%E5%A4%95/" style="color: var(--primary); text-decoration: none; font-size: 1rem;">The Eve of Era Transformation</a>
+        </div>
+    </section>
+
+</div>
 
     </main>
     
