@@ -32,33 +32,29 @@
 
 {{- $paginator := .Paginate $pages }}
 
-<div class="thoughts-container" style="max-width: 680px;">
+<div class="posts-container" style="max-width: 720px;">
 {{- range $index, $page := $paginator.Pages }}
 
-<article class="thought-entry" style="margin-bottom: 2rem; padding: 1.5rem 0; background: transparent; border: none;">
-  <div class="thought-content">
-    <div class="thought-header" style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-      <div class="author-avatar" style="flex-shrink: 0;">
-        <img src="https://ui-avatars.com/api/?name={{ site.Params.author }}&background=1a1a1a&color=fff&size=36" 
-             alt="{{ site.Params.author }}" 
-             width="36" height="36" 
-             style="border-radius: 50%; object-fit: cover;">
-      </div>
-      <div class="author-info">
-        <div class="author-name" style="font-size: 0.95rem; font-weight: 600; color: var(--primary); font-family: var(--font-sans);">{{ site.Params.author }}</div>
-        <div class="thought-date" style="font-size: 0.8rem; color: var(--secondary); font-family: var(--font-sans);">
-          {{- .Date.Format "2006年1月2日" }}
-        </div>
-      </div>
+<article class="post-entry" style="margin-bottom: 2.5rem; padding: 0; background: transparent; border: none;">
+  <header class="entry-header" style="margin-bottom: 0.75rem;">
+    <h2 style="font-size: 1.25rem; font-weight: 600; line-height: 1.4; margin: 0;">
+      <a href="{{ .Permalink }}" style="color: var(--primary); text-decoration: none; font-family: var(--font-serif);">{{ .Title }}</a>
+    </h2>
+    {{- if not (.Param "hideMeta") }}
+    <div class="entry-meta" style="font-size: 0.85rem; color: var(--secondary); margin-top: 0.4rem; font-family: var(--font-sans);">
+      {{- .Date.Format "2006年1月2日" }}
     </div>
-    <div class="thought-text" style="color: var(--content); font-size: 1rem; line-height: 1.8; font-family: var(--font-article); margin-left: calc(36px + 0.75rem);">
-      {{ .Content | safeHTML }}
-    </div>
+    {{- end }}
+  </header>
+  {{- if (ne (.Param "hideSummary") true) }}
+  <div class="entry-content" style="color: var(--content); font-size: 0.95rem; line-height: 1.8; font-family: var(--font-article);">
+    <p style="margin: 0;">{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
   </div>
+  {{- end }}
 </article>
 
 {{- if ne $index (sub (len $paginator.Pages) 1) }}
-<hr style="border: none; border-top: 1px solid var(--border); margin: 1.5rem 0;">
+<hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
 {{- end }}
 
 {{- end }}
