@@ -83,6 +83,14 @@
 </footer>
 {{- end }}
 
+<!-- 访客统计 -->
+{{- if site.Params.showVisitorMap }}
+<div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border); font-size: 0.85rem; color: var(--secondary); display: flex; gap: 1.5rem; align-items: center;">
+  <span>总访问量 <span id="busuanzi_value_site_pv" style="color: var(--primary); font-weight: 500;">...</span></span>
+  <span>访客数 <span id="busuanzi_value_site_uv" style="color: var(--primary); font-weight: 500;">...</span></span>
+</div>
+{{- end }}
+
 {{- end }}{{/* end profileMode */}}
 
 {{- end }}{{- /* end main */ -}}
