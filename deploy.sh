@@ -68,7 +68,13 @@ git push -f origin $BRANCH
 cd -
 rm -rf "$temp_dir"
 
-# 从REPO_URL提取用户名和仓库名以生成博客URL
+# 从REPO_URL提取用户名
 git_username=$(echo "$REPO_URL" | sed -n 's/.*github.com[\/:]\([^/]*\)\/\([^.]*\).*/\1/p')
 repo_name=$(echo "$REPO_URL" | sed -n 's/.*github.com[\/:]\([^/]*\)\/\([^.]*\).*/\2/p')
-echo "部署成功！博客已更新到 https://$git_username.github.io/$repo_name/"
+
+# 判断是否为GitHub Pages用户站点（仓库名以.github.io结尾）
+if [[ "$repo_name" == *.github.io ]]; then
+    echo "部署成功！博客已更新到 https://$git_username.github.io/"
+else
+    echo "部署成功！博客已更新到 https://$git_username.github.io/$repo_name/"
+fi
