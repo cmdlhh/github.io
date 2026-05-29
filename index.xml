@@ -20,49 +20,11 @@
 &lt;p&gt;观点四，大模型的能力会贯穿各行各业，会越来越像是整个社会的底层建设。所有人都离不开AI，AI的本质就是社会引擎的加速器，它让大家能够更快速地站在前人的肩膀上做事情，会让整个社会的运转不断加速。而这里，最核心的课题就是如何解释智能涌现的机制。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>当下智能的上限</title>
-      <link>https://cmdlhh.github.io/posts/2026-04-06-%E5%BD%93%E4%B8%8B%E6%99%BA%E8%83%BD%E7%9A%84%E4%B8%8A%E9%99%90/</link>
-      <pubDate>Mon, 06 Apr 2026 10:00:00 +0800</pubDate>
-      <guid>https://cmdlhh.github.io/posts/2026-04-06-%E5%BD%93%E4%B8%8B%E6%99%BA%E8%83%BD%E7%9A%84%E4%B8%8A%E9%99%90/</guid>
-      <description>&lt;p&gt;对AI的焦虑来源于对人工智能的能力边界不清楚，尤其是这几年AI的能力每年都是指数级别的上升，最显著的就是在数学和编程这类人类一贯当做智力评价的题目，在AI的世界里，是最容易跨越过去的。这里就涉及到了人类智能和AI智能的本质理解。从这个维度来说，人类智能更像是通用智能，而AI智能，只是一个专用智能。&lt;/p&gt;
-&lt;p&gt;前几天看到一个很好的说法，当下的AI更像是一种平庸的共识，而人类最珍贵的能力就是能够打破这些共识的灵光一闪，结合之前哈萨比斯对AGI的定义，回到1911年，AI能够自主推理出爱因斯坦的相对论。如果AI不能打破这个能力边界，那么它的上限就是确定性的。但是即便如此，这样的上限也是生产力效率的极大提高。&lt;/p&gt;
-&lt;p&gt;那么对于我们而言，需要思考的是，我们要把时间花在更有意义的能力建设上，比如持续思考能力，而不是技能熟练度。很多职业都将面临重塑，而职业的本身就是社会在发展过程中的中间产物，有什么职业是在十年二十年后依然能存在的，依然是有价值的，是需要我们认真思考的问题。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>OpenClaw太好玩了</title>
-      <link>https://cmdlhh.github.io/thoughts/2026-03-01-openclaw%E5%A4%AA%E5%A5%BD%E7%8E%A9%E4%BA%86/</link>
-      <pubDate>Sun, 01 Mar 2026 01:07:00 +0800</pubDate>
-      <guid>https://cmdlhh.github.io/thoughts/2026-03-01-openclaw%E5%A4%AA%E5%A5%BD%E7%8E%A9%E4%BA%86/</guid>
-      <description>&lt;p&gt;OpenClaw太好玩了，这篇文章的创作和更新都是在飞书上通过机器人聊天操作的，全程我只是下了各种指令，没有接触代码，然后让Agent自动把活干了，可以预见未来会有越来越多的活都被Agent接管，信息高速公路上将迎来了真正的繁荣&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>智能爆炸时代</title>
-      <link>https://cmdlhh.github.io/posts/2026-02-15-%E6%99%BA%E8%83%BD%E7%88%86%E7%82%B8%E6%97%B6%E4%BB%A3/</link>
-      <pubDate>Sun, 15 Feb 2026 10:00:00 +0800</pubDate>
-      <guid>https://cmdlhh.github.io/posts/2026-02-15-%E6%99%BA%E8%83%BD%E7%88%86%E7%82%B8%E6%97%B6%E4%BB%A3/</guid>
-      <description>&lt;p&gt;AI的编程能力正在疯狂进步，已经到了让所有人类程序员面临淘汰的地步。这几天深度使用了GLM5，我明显感觉到：如果现在还在手工编码，就跟傻子没有区别。&lt;/p&gt;
-&lt;p&gt;为什么我会如此焦虑？核心在于我是一个科班毕业生——本科和研究生学了7年软件工程。我深知这门学科在过去是一门相当耗费经验和时间的实践课：你需要花费数千甚至数万小时去反复编码、试错、解决Bug，才能从菜鸟工程师成长为资深工程师。而这其中，大量时间都浪费在了无意义的Debug和体力活编码上。这也是为什么我不喜欢编程的原因——我本质上不是一个热衷于重复性工作的人。&lt;/p&gt;
-&lt;p&gt;但在2023年之后，这门学科被彻底改变了。大语言模型在各项编程指标上不断提升，尤其是从2025年下半年开始，AI的编程能力已经远超人类水平，并且实打实能实现ROI的提升。回想Anthropic CEO早些时候的判断，是没有问题的：到了2026年底，全世界可能80%-90%的新代码都将由AI生成。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>越来越接近</title>
+      <title>解决生存问题</title>
       <link>https://cmdlhh.github.io/thoughts/2026-01-25-%E8%B6%8A%E6%9D%A5%E8%B6%8A%E6%8E%A5%E8%BF%91/</link>
       <pubDate>Sun, 25 Jan 2026 15:25:00 +0800</pubDate>
       <guid>https://cmdlhh.github.io/thoughts/2026-01-25-%E8%B6%8A%E6%9D%A5%E8%B6%8A%E6%8E%A5%E8%BF%91/</guid>
-      <description>&lt;p&gt;已经持续了快一年的短线交易盈利了，我有理由相信我离真正的悟道越来越近。接下来我需要将这些脑海中的想法和经验沉淀到一个交易系统里，解放我的时间，让自己有更多的时间去思考和探索新的事物。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>新世界的大门正在缓缓打开</title>
-      <link>https://cmdlhh.github.io/posts/2026-01-03-%E6%96%B0%E4%B8%96%E7%95%8C%E7%9A%84%E5%A4%A7%E9%97%A8%E6%AD%A3%E5%9C%A8%E7%BC%93%E7%BC%93%E6%89%93%E5%BC%80/</link>
-      <pubDate>Sat, 03 Jan 2026 17:45:00 +0800</pubDate>
-      <guid>https://cmdlhh.github.io/posts/2026-01-03-%E6%96%B0%E4%B8%96%E7%95%8C%E7%9A%84%E5%A4%A7%E9%97%A8%E6%AD%A3%E5%9C%A8%E7%BC%93%E7%BC%93%E6%89%93%E5%BC%80/</guid>
-      <description>&lt;p&gt;花了两小时的时间重新搭建了个人博客，借助了当下流行的编程IDE工具Trae的力量，这个速度在过去而言是不可想象的。&lt;/p&gt;
-&lt;p&gt;AI让编程的门槛降低到了前所未有的低，几乎没有任何成本，仅仅需要自然语言就可以完成复杂的编程任务。&lt;/p&gt;
-&lt;p&gt;目前看到的大模型最有希望能解决的方向就是代码和数学，这种改变是革命性的。&lt;/p&gt;
-&lt;p&gt;我们的许多固有思维都需要发生变化。&lt;/p&gt;
-&lt;p&gt;传统的编程范式是一种低效但是人类能确定正确的方式，而当下需要转变思维，AI编程是一种高效可并发但存在概率出错的方式，从人类社会的发展来说，后者是更优的。&lt;/p&gt;
-&lt;p&gt;软件领域的速度问题解决了，还有一个最重要的问题需要解决，就是人与人之间过于低效的沟通交流，本质就是和真实世界的交互。&lt;/p&gt;
-&lt;p&gt;如果脑机接口这个项目能够实现，那么人类真的有可能进入一个全新的社会。&lt;/p&gt;</description>
+      <description>&lt;p&gt;已经持续了快一年的短线交易盈利了，我有理由相信我已经找到了一个能稳定盈利的模式。接下来我需要将这些脑海中的想法和经验沉淀到一个交易系统里，解放我的时间，让自己有更多的时间去思考和探索新的事物。&lt;/p&gt;</description>
     </item>
     <item>
       <title>时代变革的前夕</title>
