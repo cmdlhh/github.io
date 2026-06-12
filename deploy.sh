@@ -74,9 +74,10 @@ git push -f origin $BRANCH
 cd -
 rm -rf "$temp_dir"
 
-# 从REPO_URL提取用户名
-git_username=$(echo "$REPO_URL" | sed -n 's/.*github.com[\/:]\([^/]*\)\/\([^.]*\).*/\1/p')
-repo_name=$(echo "$REPO_URL" | sed -n 's/.*github.com[\/:]\([^/]*\)\/\([^.]*\).*/\2/p')
+# 从REPO_URL提取用户名和仓库名
+git_username=$(echo "$REPO_URL" | sed -n 's/.*github.com[\/:]\([^/]*\)\/\([^/]*\).*/\1/p')
+repo_name=$(echo "$REPO_URL" | sed -n 's/.*github.com[\/:]\([^/]*\)\/\([^/]*\).*/\2/p')
+repo_name=${repo_name%.git}
 
 # 判断是否为GitHub Pages用户站点（仓库名以.github.io结尾）
 if [[ "$repo_name" == *.github.io ]]; then
