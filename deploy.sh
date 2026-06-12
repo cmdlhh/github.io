@@ -3,20 +3,26 @@
 # 确保脚本在出错时立即退出
 set -e
 
-# 配置项
-REPO_URL="git@github.com:cmdlhh/cmdlhh.github.io.git"
 BRANCH="gh-pages"
-# 使用相对路径替代绝对路径，以隐藏用户目录信息
 LOCAL_PUBLIC_DIR="$(pwd)/public"
 
-# 清理并构建网站
+# 优先从当前仓库读取远程地址，否则使用默认值
+REPO_URL=$(git remote get-url origin 2>/dev/null || echo "git@github.com:cmdlhh/cmdlhh.github.io.git")
+
+echo "使用仓库地址: $REPO_URL"
+
+# 清理旧的构建输出，避免残留文件
+echo "正在清理旧的构建输出..."
+rm -rf "$LOCAL_PUBLIC_DIR"
+
+# 构建网站
 echo "正在构建网站..."
-hugo
+hugo --gc
 
 # 检查是否有 public 目录
 if [ ! -d "$LOCAL_PUBLIC_DIR" ]; then
     echo "错误：$LOCAL_PUBLIC_DIR 目录不存在，请检查 Hugo 构建是否成功"
-exit 1
+    exit 1
 fi
 
 # 创建临时目录
@@ -42,17 +48,17 @@ if git ls-remote --exit-code --heads origin $BRANCH >/dev/null 2>&1; then
 else
     # 如果远程分支不存在，创建一个新的空分支
     git checkout --orphan $BRANCH
-    # 删除所有文件以创建真正的空分支
-    git rm -rf --cached .
+    # 删除所有文件以创建真正的空分支（忽略无文件可删的错误）
+    git rm -rf --cached . 2>/dev/null || true
 fi
 
 # 清空临时目录中的所有内容（除了.git目录）
 echo "正在清理临时目录..."
 find . -mindepth 1 -maxdepth 1 ! -name '.git' -exec rm -rf {} +
 
-# 复制构建目录中的所有文件到临时目录
+# 复制构建目录中的所有文件到临时目录（包括隐藏文件）
 echo "正在复制网站文件..."
-cp -r "$LOCAL_PUBLIC_DIR"/* .
+cp -a "$LOCAL_PUBLIC_DIR"/. .
 
 # 添加所有更改
 git add .
